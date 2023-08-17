@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html class="">
+
+<head>
+  <link rel="stylesheet" href="pdp.css" type="text/css">
+
+</head>
+
+<body>
+  <a class="scrollToTop">Scroll To Top</a>
+
+  <div class="t_overlay" style="display: none;">
+    <div class="tutorialModel">
+      <div class="exc_price">
+        <span class="circle"><i class="ex_dis"></i></span>
+        <h3>Exclusive Price</h3>
+        <p>This is exclusive price for our esteemed customer.</p>
+        <a>Ok</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="common_overlay" class="b_overlay" style="display: none;">
+    <div id="common_popupModel" class="popupModel" style="display: none;">
+      <a id="a_close_id" class="close"></a>
+      <div class="sc_offer scrollable" style="display: none;">
+        <span class="pop_heading">Terms &amp; Condition</span>
+        <p></p>
+      </div>
+      <div class="policy_holder scrollable" style="display: none;">
+        <span class="pop_heading">Enter Policyholder Information</span>
+        <div id="insurance_popup" class="insurance_popup">
+          <div class="rgci">
+            <h4>Reliance General Coronavirus Insurance</h4>
+            <p id="sum_in"></p>
+          </div>
+          <div class="default_form">
+            <h4>Policyholder Information</h4>
+            <div class="inpt_group">
+              <input class="label_jump" id="name" value="" type="text">
+              <label id="name-label">Name (as per Valid ID proof)</label>
+              <span></span>
+            </div>
+            <div class="error_txt" id="name1"></div>
+            <div class="inpt_group">
+              <input id="phone" value="" class="label_jump" type="number">
+              <label id="phone-label">Mobile Number</label>
+              <span></span>
+            </div>
+            <div class="error_txt" id="phone1"></div>
+            <div class="inpt_group">
+              <a class="icon calendar" data-target="plans"><i class="sm"></i></a>
+              <input id="dob" class="label_jump" type="text">
+              <label id="dob-label">Date of Birth</label>
+              <span></span>
+            </div>
+            <div class="error_txt" id="dob1"></div>
+            <ul class="rd">
+              <li>
+                <input id="male" name="gender" checked="checked" value="M" type="radio">
+                <label for="male">Male</label>
+              </li>
+              <li>
+                <input id="female" name="gender" value="F" type="radio">
+                <label for="female">Female</label>
+              </li>
+            </ul>
+            <div class="ext_txt">
+              <h4>Declaration and conditions</h4>
+              <ol>
+                <li>Certificate is provided considering below declaration, I hereby confirm that:</li>
+                <li>Maximum Cumulative Sum Insured allowed for single person cannot be greater than 2,00,000 under multiple policies
+                  <ul>
+                    <li>
+                      Neither me nor my any family member or close associate is suffering from Covid 19 or quarantined/I or we have not met any Covid affected person in last 15 days
+                    </li>
+                    <li>
+                      I am not living with and sharing the same address as that of person(s) who is/were Diagnosed with COVID-19 or Quarantined
+                    </li>
+                    <li>
+                      Have Not traveled to international destination in 45 day immediately preceding the Certificate Period Start Date
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  All Standard terms and conditions of product are applicable
+                </li>
+              </ol>
+              <div class="tnc">
+                <input id="chk_box1" type="checkbox">
+                <label for="chk_box1">by proceeding, I agree to the</label> <a id="r_terms" target="_blank">Terms &amp; Conditions</a>
+              </div>
+              <button data-formid="148466887" id="buy_now_reliance" class="btn orange">Proceed to Pay EUR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review_gallery" style="display: none;">
+        <span class="head">Customer images &amp; videos</span>
+        <ul id="all_review_video_details">
+
+        </ul>
+      </div>
+      <div class="review_fullgallery" id="close_reviewGallary" style="display: none;">
+
+        <a class="view_gallery"> 
+                  Back to customer images &amp; videos  
+                  </a>
+        <div class="gallery_review">
+          <div class="review_video">
+            <video id="video-player" preload="metadata" controls="" controlslist="nodownload">
+              <source src="Sapno.MP4" type="video/mp4">
+            </video>
+
+          </div>
+          <div class="review_detail">
+            <ul>
+              <li>
+                <p>Vikas kumar</p>
+                <span>Reviewed on 25 Oct, 2020</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sc_emi scrollable" style="display: none; height: 500px;">
+      </div>
+      <div class="sc_sizeChart scrollable" style="display: none;">
+        <span class="pop_heading">Size Chart</span>
+        <div class="size_chart_img">
+          <img id="sc_img" src="jaipuri-razai-double-bed-cotton-jaipuri-razai-light-weight-with-cotton-filling-traditional-jaipuri-razai-comforter-quilt-jaip....html" alt="">
+        </div>
+        <div class="size_chart_table">
+          <table id="table_data" border="0" width="100%" cellspacing="0" cellpadding="0">
+          </table>
+        </div>
+      </div>
+      <div id="loginModelBox" style="display: none;">
+        <div id="responseLoading_login" style="display: block; z-index: 0;">
+          <div class="circleSpin">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <!-- END LOGIN POPUP CODE -->
+    </div>
+
+    <!-- STARTS AREA CODE -->
+    <div class="popupModel pincodeModel" style="display: none;">
+      <a class="close"></a>
+      <div class="pincode_section" style="display: none;">
+        <div class="result_content">
+          <i class="b_localtion"></i>
+          <span class="loc_zone_msg_popup">Hi, Select Your Zone</span>
+          <p><span class="loc_zone_sub_msg_popup">Share pincode for faster delivery by local sellers.</span></p>
+          <div class="buil_img"></div>
+        </div>
+        <form action="">
+          <span class="pincode_input"><input placeholder="enter your pincode" id="pin_code_popup" name="" type="text"></span>
+          <!-- <span class="btn_effect"> -->
+          <input class="btn orange" name="" id="get_pincode_popup" value="Submit" type="button">
+          <!-- </span> -->
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--            Header            -->
+  <div class="sc_header">
+    <div class="ffix_header removeAbc">
+      <div class="wrapper">
+        <div class="sc_rlinks">
+          <div class="up_rlinks">
+            <ul>
+              <li id="sell_with_us"><a href="">Sell With Us</a></li>
+              <li><a href="">Contact Us</a> </li>
+              <li>Download App:</li>
+              <li>
+                <a href="" class="sc_android" title="Android App Store"></a>
+                <a href="" class="sc_apple" title="Apple App Store"></a>
+                <a href="" class="sc_windows" title="Windows App Store"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sc_logo" itemscope="" itemtype="http://schema.org/Organization">
+          <meta itemprop="name" content="polarkae.github.io">
+          <a href="" title="polarkae.github.io online shopping" itemprop="url">
+            <img itemprop="logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODIzIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDgyMyAxNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTY3LjkzMi43OTJjMzcuNDMyIDAgNjcuNzg2IDMxLjE1IDY3Ljc1MiA2OS41Mi0uMDYgMzcuNzA3LTMwLjY2NiA2OC42OS02Ny45MjUgNjguNjgzLTM3LjQ0NiAwLTY3Ljc5OS0zMS4xNDktNjcuNzU5LTY5LjUyQy4wMDcgMzEuNzgyIDMwLjY2Ljc4NSA2Ny45MzIuNzkyeiIgZmlsbD0iIzA1QTJCMyIvPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMTIuNDY0IDM4LjYzYy0uNTM5IDEuMDE4LTMxLjc3IDQ0Ljk3Ni00OS44MTUgNjUuNDMxLTQuMjcxIDQuODM1LTExLjQzNyA0Ljk2MS0xNS43MDItLjI1Mi05Ljg2Ny0xMi4wNS0xNy44MzgtMjIuNTExLTI3LjA5My0zNy4wNDgtMS4yNzctMS45OTUtMi44NTQtNC44NzUtLjU2Ni03LjM5NSAwIDAgMi41MjItMi44MDcgNy45ODUgMS4wNSA2Ljk0IDQuODk1IDE0LjMyNSA5LjY3NyAyMS4xMzggMTQuMjE5IDMuODk5IDIuNTkzIDYuMzg3IDIuODIgOS45OC4wMzNDNzMuNTI4IDYyLjk2MyAxMDcuNDYgMzcuNzIgMTA5LjM5IDM2LjU0MmMzLjQwNi0yLjA2OCAzLjgzOS41MiAzLjAyNyAyLjA4OWguMDQ3eiIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMTIuNDY0IDM4LjYzYy0uNTM5IDEuMDE4LTMxLjc3IDQ0Ljk3Ni00OS44MTUgNjUuNDMxLTQuMjcxIDQuODM1LTExLjQzNyA0Ljk2MS0xNS43MDItLjI1Mi05Ljg2Ny0xMi4wNS0xNy44MzgtMjIuNTExLTI3LjA5My0zNy4wNDgtMS4yNzctMS45OTUtMi44NTQtNC44NzUtLjU2Ni03LjM5NSAwIDAgMi41MjItMi44MDcgNy45ODUgMS4wNSA2Ljk0IDQuODk1IDE0LjMyNSA5LjY3NyAyMS4xMzggMTQuMjE5IDMuODk5IDIuNTkzIDYuMzg3IDIuODIgOS45OC4wMzNDNzMuNTI4IDYyLjk2MyAxMDcuNDYgMzcuNzIgMTA5LjM5IDM2LjU0MmMzLjQwNi0yLjA2OCAzLjgzOS41MiAzLjAyNyAyLjA4OWguMDQ3eiIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggZD0iTTc5NS43MDIgNjIuMTk5Yy0xLjc3LjUyNS0zLjQyIDEuMzktNC44NTcgMi41NDdhMTAuOTcgMTAuOTcgMCAwIDAtMy4wMTQgMy45OSAxMy4xODQgMTMuMTg0IDAgMCAwLTEuMDM4IDUuMzIgMTEuODA1IDExLjgwNSAwIDAgMCAxLjI3MSA1LjY0NiAxMS4zODUgMTEuMzg1IDAgMCAwIDMuMzggMy45MyAxNC41MyAxNC41MyAwIDAgMCA0LjkwMyAyLjI4OCAyMy41MjUgMjMuNTI1IDAgMCAwIDExLjgxIDAgMTQuMjg2IDE0LjI4NiAwIDAgMCA0Ljg3Ny0yLjI4OCAxMS4xNzcgMTEuMTc3IDAgMCAwIDMuMzI3LTMuOTIzIDEyLjQ4OCAxMi40ODggMCAwIDAgMS4yMjQtNS43NiAxMi4yNTUgMTIuMjU1IDAgMCAwLTEuMjUxLTUuNzEyIDExLjI5OSAxMS4yOTkgMCAwIDAtMy4zMjctMy45MjMgMTQuNjQyIDE0LjY0MiAwIDAgMC00Ljg4My0yLjI4OCAyMi40MTUgMjIuNDE1IDAgMCAwLTUuODc1LS43NTIgMjIuMDYgMjIuMDYgMCAwIDAtNi41MjEuODkybC0uMDI2LjAzM3ptLTExLjc4NCAxOS41MjVhMTcuMjIxIDE3LjIyMSAwIDAgMS0xLjU3Ni03LjUxNSAxOC4yOTEgMTguMjkxIDAgMCAxIDEuNTUtNy43NCAxNS42NCAxNS42NCAwIDAgMSA0LjI3OC01LjU4NyAxOC40OTMgMTguNDkzIDAgMCAxIDYuMzQ3LTMuMzY1IDI3LjAxMyAyNy4wMTMgMCAwIDEgMTUuMzAzIDAgMTguODMxIDE4LjgzMSAwIDAgMSA2LjI5NSAzLjMyNSAxNS44MjQgMTUuODI0IDAgMCAxIDQuMzA0IDUuNTQ2IDE5LjMzNCAxOS4zMzQgMCAwIDEgMCAxNS4zMjkgMTUuODY0IDE1Ljg2NCAwIDAgMS00LjMwNCA1LjU0IDE4LjQyIDE4LjQyIDAgMCAxLTYuMjk1IDMuMzI1IDI2LjExMSAyNi4xMTEgMCAwIDEtNy42MDUgMS4wOSAyNS43OSAyNS43OSAwIDAgMS03LjY3OC0xLjExNyAxOC43NzMgMTguNzczIDAgMCAxLTYuMzItMy4zMjUgMTYuMDY2IDE2LjA2NiAwIDAgMS00LjMwNS01LjQ4NmwuMDA2LS4wMnptMzYuOTAxIDM0LjEwOC0uMDc0LS4yMTNhMTQuNjM1IDE0LjYzNSAwIDAgMC0yLjkyLTQuNzY4IDE0Ljg5IDE0Ljg5IDAgMCAwLTQuMjY1LTMuMTcyIDIzLjgwOSAyMy44MDkgMCAwIDAtNS4wODQtMS44MDJsLS44MzEtLjE4Ni4wNzMgNS4zMi41MTkuMTJjMS4zMzUuMzAyIDIuNjI0Ljc4IDMuODMyIDEuNDIzYTExLjgzOCAxMS44MzggMCAwIDEgMi45ODEgMi4yODcgOS45NTcgOS45NTcgMCAwIDEgMS45NDkgMy4xMTljLjM3OSAxLjEzNC41NjggMi4zMjMuNTU5IDMuNTE4YTExLjU3NiAxMS41NzYgMCAwIDEtMS4zMyA1LjgxMiAxMC40MSAxMC40MSAwIDAgMS0zLjQ1MyAzLjY3MSAxNS4yOTkgMTUuMjk5IDAgMCAxLTQuOTU3IDEuOTk1Yy0zLjg1Mi44MzMtNy44NC43OTktMTEuNjc3LS4wOTlhMTQuNzkxIDE0Ljc5MSAwIDAgMS00Ljg1MS0yLjE1NSAxMC41OTQgMTAuNTk0IDAgMCAxLTMuMzI2LTMuNjQ0IDEwLjgxNCAxMC44MTQgMCAwIDEtMS4yMTEtNS4yNzQgMTUuODY4IDE1Ljg2OCAwIDAgMSAuNDUyLTMuOTQzIDkuNTQ1IDkuNTQ1IDAgMCAxIDEuMjMxLTIuNjYxYzEuMjExLTEuNzc1IDMuMzI3LTMuMDA1IDYuMjA4LTMuNjc3bC41MzktLjExM3YtLjM5MmguMDY2di00LjgxNWwtLjc3MS4xMmExNS40MjYgMTUuNDI2IDAgMCAwLTUuMTUgMS43MDIgMTIuNDA3IDEyLjQwNyAwIDAgMC0zLjc3OSAzLjE2NSAxMi44NDggMTIuODQ4IDAgMCAwLTEuOTIzIDMuMzcyYy0uMjE3LjQ5LS40MDYuOTkyLS41NjYgMS41MDNhMTguNDgzIDE4LjQ4MyAwIDAgMC0uNzU4IDUuMzggMjEuNTc4IDIxLjU3OCAwIDAgMCAxLjA3MSA2LjkzNiAxNC4xMTYgMTQuMTE2IDAgMCAwIDMuNTA2IDUuNjEzIDE2LjQ5OCAxNi40OTggMCAwIDAgNi4xODEgMy43MjQgMjcuNTU5IDI3LjU1OSAwIDAgMCA5LjA3NiAxLjMzYzIuNTMuMDEyIDUuMDUzLS4yODUgNy41MTEtLjg4NWExOC4yMzcgMTguMjM3IDAgMCAwIDYuMzM1LTIuODU5IDE0LjQ5MyAxNC40OTMgMCAwIDAgNC4zNzEtNS4xMTQgMTYuMTQ5IDE2LjE0OSAwIDAgMCAxLjYxNy03LjQ4MSAxOC40NzMgMTguNDczIDAgMCAwLTEuMDg1LTYuNTkxIDIuNjczIDIuNjczIDAgMCAwLS4xMDYtLjIzOWwuMDQtLjAyN3ptLTM3LjMzMy03NS4wMjdoMzcuMzc5di0uMzMyaC4xOHYtNC43ODhoLTI4LjQ4NGwyOC4zMDQtMTAuNDQxdi0uNDE5bC4xOC0uMDY2di00LjE3bC0yNy44NTItMTAuMjQxaDI3LjY3MnYtLjY2NWguMThWNC44OTVINzgzLjN2Ni4zNTdsLjE4Ni4wNnYuNTU5TDgxMy41IDIyLjgzbC0zMC4yIDExLjIyNXY2LjM5MWguMTg2VjQwLjgwNXptLTU1LjQzNy00LjgyOGMwLTcuMjI4IDAtMTMuNDg2IDYuODQ3LTEzLjQ4NiA2Ljg0NiAwIDYuODM5IDcuOTggNi44MzkgMTMuODc5IDAgMi45MzIuOTg1IDMuOTEgMy45MTMgMy45MWgxNS40NTZjMi45MzQgMCAzLjkxMi0xLjk1NSAzLjkxMi00Ljg4MSAwLTIxLjExNC0xMC4xNjctMzUuMTkzLTMxLjA5OC0zNS4xOTMtMTkuNTU1IDAtMjkuMzM2IDEzLjA5NC0yOS4zMzYgMzAuNjkgMCAxNS40NDIgMS45NTcgMjIuNjc4IDIwLjczMyA0NC43NjMgMTAuMzY2IDEyLjEyMyAxNi4yMzQgMjAuMTM2IDE2LjIzNCAyNy41NjUgMCA3LjIyOCAwIDEzLjQ3OS02Ljg0NiAxMy40NzktNi44NDcgMC02Ljg0LTcuOTgtNi44NC0xMy44NzggMC0yLjkzMy0uOTg1LTMuOTEtMy45MTItMy45MWgtMTUuNDYzYy0yLjkzNCAwLTMuOTEyIDEuOTU0LTMuOTEyIDQuODg3IDAgMjEuMTIxIDEwLjE2NiAzNS4xOTMgMzEuMDk4IDM1LjE5MyAxOS41NTUgMCAyOS4zMzUtMTMuMDk0IDI5LjMzNS0zMC42OTcgMC0xNS40MzUtMS43NTYtMjIuNjc3LTIwLjUzMi00NC43NjMtMTAuMzczLTEyLjExNi0xNi40MzQtMjAuMTMtMTYuNDM0LTI3LjU1OGguMDA2em0tNzguNDExIDEwMi4wNGg0Mi4yMTZjMi45MzUgMCAzLjkxMy0uOTc3IDMuOTEzLTMuOTF2LTE0LjQ3MWMwLTIuOTMzLS45NzgtMy45MDQtMy45MTMtMy45MDRoLTE4Ljc3NmMtMy45MTIgMC0zLjkxMiAwLTMuOTEyLTMuOTFWODAuOTM5YzAtMy45MSAwLTMuOTEgMy45MTItMy45MWgxOC43NzZjMi45MzUgMCAzLjkxMy0uOTc4IDMuOTEzLTMuOTFWNTguNjQ3YzAtMi45MjYtLjk3OC0zLjkwNC0zLjkxMy0zLjkwNGgtMTguNzc2Yy0zLjkxMiAwLTMuOTEyIDAtMy45MTItMy45MVYyNy4zNzJjMC0zLjkwNCAwLTMuOTA0IDMuOTEyLTMuOTA0aDE4Ljc3NmMyLjkzNSAwIDMuOTEzLS45NzcgMy45MTMtMy45MVY1LjA5NGMwLTIuOTMzLS45NzgtMy45MS0zLjkxMy0zLjkxaC00Mi4yMzZjLTIuOTQxIDAtMy45MTIuOTc3LTMuOTEyIDMuOTF2MTI5LjAxM2MwIDMuOTEgMS45NTYgMy45MSAzLjkxMiAzLjkxaC4wMnpNNjEwLjUyMiA1LjA5NHY5NS41ODljMCA5Ljc2OSAwIDE2LjAyLTYuODQ2IDE2LjAycy02Ljg0Ni02LjI1MS02Ljg0Ni0xNi4wMlY1LjA5NGMwLTIuOTMzLS45NzktMy45MS0zLjkxMy0zLjkxaC0xNS42NDJjLTIuOTM0IDAtMy45MTIuOTc3LTMuOTEyIDMuOTF2OTQuNzk4YzAgMjkuNTIgMTAuNzU4IDM5LjEwMyAzMC4zMTMgMzkuMTAzczMwLjI5My05Ljc4MyAzMC4yOTMtMzkuMTAzVjUuMDk0YzAtMi45MzMtLjk3MS0zLjkxLTMuOTEyLTMuOTFoLTE1LjYzNmMtMi45MzQgMC0zLjkxMi45NzctMy45MTIgMy45MWguMDEzem0tODcuMjI3IDEzMi45MjNoNDEuMjUyYzIuOTM0IDAgMy45MTktLjk3NyAzLjkxOS0zLjkxdi0xNC40NzFjMC0yLjkzMy0uOTg1LTMuOTA0LTMuOTE5LTMuOTA0aC0xNy41ODVjLTQuMTA1IDAtNC4xMDUgMC00LjEwNS00LjEwM1Y1LjA5NGMwLTIuOTMzLS45NzItMy45MS0zLjkxOS0zLjkxaC0xNS42NDNjLTIuOTM0IDAtMy45MDUuOTc3LTMuOTA1IDMuOTF2MTI5LjAxM2MwIDIuOTMzLjk3MSAzLjkxIDMuOTA1IDMuOTF6TTQ3MC41IDM4LjMyNWMwLTkuNzcgMC0xNi4wMzQgNi44NDctMTYuMDM0IDYuODQ2IDAgNi44NDYgNi4yNjUgNi44NDYgMTYuMDM0djUuODU5YzAgMi45MzkuOTcxIDMuOTEgMy45MTIgMy45MWgxNS42MzZjMi45NDEgMCAzLjkxMi0uOTcxIDMuOTEyLTMuOTF2LTUuMDg4QzUwNy42NTMgOS43NyA0OTYuOTAxIDAgNDc3LjM0NyAwYy0xOS41NTUgMC0zMC4zNCA5LjU4My0zMC4zNCAzOS4wOTZWOTkuODhjMCAyOS41MiAxMC43NTggMzkuMTAyIDMwLjMyIDM5LjEwMiAxOS41NjEgMCAzMC4zMDYtOS43ODIgMzAuMzA2LTM5LjEwMnYtNC44ODJjMC0yLjkzMi0uOTcxLTMuOTEtMy45MTItMy45MWgtMTUuNjM2Yy0yLjk0MSAwLTMuOTEyLjk3OC0zLjkxMiAzLjkxdjUuNjczYzAgOS43NjkgMCAxNi4wMi02Ljg0NiAxNi4wMi02Ljg0NyAwLTYuODQ3LTYuMjUxLTYuODQ3LTE2LjAyVjM4LjMyNWguMDJ6TTM5OC4xNDQgMjYuNGMwLTMuOTEgMC0zLjkxIDMuOTEyLTMuOTEgOS43NzQgMCA5Ljc3NCA5Ljk3NSA5Ljc3NCAxOS45NXY4Ljc5MmMwIDkuOTc1IDAgMTkuOTUtOS43NzQgMTkuOTUtMy45MTIgMC0zLjkxMiAwLTMuOTEyLTMuNTE4VjI2LjQwMXptMzcuMTUzIDI3LjE3M3YtMTMuM2MwLTI5LjMyOC0xMy42ODctMzkuMDk3LTMzLjI2OC0zOS4wOTdoLTIzLjQ0N2MtMi45MzQgMC0zLjkxMi45NzgtMy45MTIgMy45MVYxMzQuMWMwIDIuOTMzLjc4NSAzLjkxIDMuOTEyIDMuOTFoMTUuNjQ5YzIuNzM1IDAgMy45MTMtLjk3NyAzLjkxMy0zLjkxVjk2LjM4YzAtMy45MSAwLTMuOTEgMy45MTItMy45MSAxOS41NTQgMCAzMy4yNjctOS43NzUgMzMuMjY3LTM4Ljg5NmgtLjAyNnptLTk1LjgxLTE0Ljg1N3Y2MS45NjZjMCA5Ljc2OSAwIDE2LjAyLTYuODQ3IDE2LjAyLTYuODQ2IDAtNi44NC02LjI1MS02Ljg0LTE2LjAyVjM4LjcxN2MwLTkuOTc1IDAtMTYuMjI2IDYuODQtMTYuMjI2czYuODQ3IDYuMjU4IDYuODQ3IDE2LjIyNnptMjMuNDY2IDYxLjE4MVYzOS4zMDNjMC0yOS4zMjctMTAuNzUyLTM5LjA5Ni0zMC4zMTMtMzkuMDk2cy0zMC4zMTMgOS41NzYtMzAuMzEzIDM5LjA5NnY2MC41OWMwIDI5LjUyIDEwLjc1OSAzOS4xMDMgMzAuMzEzIDM5LjEwMyAxOS41NTUgMCAzMC4zMTMtOS43ODMgMzAuMzEzLTM5LjEwM3YuMDA3em0tOTEuOTMxIDM4LjExOWgxNS42MzZjMS45NTYgMCAzLjkxMiAwIDMuOTEyLTMuOTFWNS4wOTRjMC0yLjkzMy0uOTc4LTMuOTEtMy45MTItMy45MWgtMTUuNjM2Yy0yLjkyNyAwLTMuOTA1Ljk3Ny0zLjkwNSAzLjkxdjQ1Ljc0YzAgMy45MSAwIDMuOTEtMy45MTIgMy45MWgtNS44NjJjLTMuOTEyIDAtMy45MTIgMC0zLjkxMi0zLjkxVjUuMDk0YzAtMi45MzMtLjk3OC0zLjkxLTMuOTEzLTMuOTFoLTE1LjY1NWMtMi45MjggMC0zLjkxMi45NzctMy45MTIgMy45MXYxMjkuMDEzYzAgMy45MSAxLjk5NiAzLjkxIDMuOTEyIDMuOTFoMTUuNjU1YzEuOTU3IDAgMy45MTMgMCAzLjkxMy0zLjkxVjgwLjkwNmMwLTMuOTEgMC0zLjkxIDMuOTEyLTMuOTFoNS44NjJjMy45MTIgMCAzLjkxMiAwIDMuOTEyIDMuOTF2NTMuMjAxYzAgMy45MSAxLjk1NiAzLjkxIDMuOTA1IDMuOTF6bS04Ni44MjctMTAyLjA0YzAtNy4yMjggMC0xMy40ODYgNi44NTMtMTMuNDg2czYuODQ2IDcuOTggNi44NDYgMTMuODc5YzAgMi45MzIuOTcyIDMuOTEgMy45MDYgMy45MWgxNS40NDljMi45MzQgMCAzLjkwNi0xLjk1NSAzLjkwNi00Ljg4MSAwLTIxLjExNC0xMC4xNi0zNS4xOTMtMzEuMDg1LTM1LjE5My0xOS41NjggMC0yOS4zNDIgMTMuMDk0LTI5LjM0MiAzMC42OSAwIDE1LjQ0MiAxLjk2MyAyMi42NzggMjAuNzM5IDQ0Ljc2MyAxMC4zNTkgMTIuMTIzIDE2LjIyOCAyMC4xMzYgMTYuMjI4IDI3LjU2NSAwIDcuMjI4IDAgMTMuNDc5LTYuODQ3IDEzLjQ3OS02Ljg0NiAwLTYuODQ2LTcuOTgtNi44NDYtMTMuODc4IDAtMi45MzMtLjk3OC0zLjkxLTMuOTA2LTMuOTFIMTY0LjY0Yy0yLjkzNCAwLTMuOTEyIDEuOTU0LTMuOTEyIDQuODg3IDAgMjEuMTIxIDEwLjE2NiAzNS4xOTMgMzEuMDk4IDM1LjE5MyAxOS41NTUgMCAyOS4zMjktMTMuMDk0IDI5LjMyOS0zMC42OTcgMC0xNS40MzUtMS43NTctMjIuNjc3LTIwLjUzMy00NC43NjMtMTAuMzU5LTEyLjExNi0xNi40MjctMjAuMTMtMTYuNDI3LTI3LjU1OHptNTgzLjI0MyA5NS45NTVoNy4wNjZ2Ny4wNjNoLTcuMDY2di03LjA2M3oiIGZpbGw9IiMxRDFEMUIiLz4KPC9zdmc+Cg==" alt="https://polarkae.github.io">
+
+          </a>
+        </div>
+        <div class="sc_search">
+          <span id="search">
+                     <input id="autocomplete" value="" placeholder="What is on your mind today?" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" type="text">
+                     <input value="" type="submit">
+                     <a class="srch_action btn orange">Search</a>
+                     <div class="srch_sugg_lst" style="display: none;">
+                      <ul id="search-result"></ul>
+                      <div class="seaches_sugge">
+                        <ul class="recent_searches" style="display: none;">
+                          <li class="heading"><span>Recent Searches</span><a class="clear_history">Clear Search History</a></li>
+          </ul>
+          <ul class="trending_srches" style="display: none;">
+            <li class="heading"><span>Trending Searches</span></li>
+          </ul>
+        </div>
+      </div>
+      </span>
+    </div>
+    <div class="sc_rlinks_btm">
+      <ul>
+        <li class="bell_notification">
+          <a class="notify_ic">
+            <span style="display: none;" class="notification_count"></span>
+          </a>
+          <div class="hoverContent notification_content">
+            <div class="quickCart">
+              <div class="nItem">
+                <p>Notifications</p>
+              </div>
+              <div class="notify_list">
+                <a>
+                  <p>No new notifications</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li id="wishlist_d">
+          <a class="whishlist_ic"></a>
+        </li>
+        <li id="wishlist_d_content" style="display: none;">
+          <a href="" class="whishlist_ic"></a>
+        </li>
+        <li class="qCart"><a href="" class="cart_ic"><span style="display: none;" class="cart_icon_count"></span></a>
+          <div class="hoverContent"></div>
+        </li>
+        <li id="sc_uname" style="display: none;"><a><i></i></a>
+          <div class="hoverContent sc_actLinks">
+            <div class="actLink_heading" id="vip_on">
+              <a></a>
+            </div>
+            <ul>
+              <li><a href=""><i class="usr_ordr"></i>My Orders</a></li>
+              <li><a href=""><i class="usr_msg"></i>My Returns</a>
+              </li>
+              <li><a href=""><i class="usr_wshlst"></i>Wishlist</a></li>
+              <li><a href=""><i class="usr_profile"></i>My Profile</a></li>
+              <li><a href=""><i class="usr_msg"></i>My Chat</a></li>
+              <li><a href=""><i class="usr_clues"></i>My CluesBucks</a></li>
+              <li><a href=""><i class="usr_clues"></i>My CluesBucks<sup>+</sup></a></li>
+              <li><a href=""><i class="usr_feed"></i>My Feedback</a></li>
+              <li><a href=""><i class="hlp_support"></i>Help &amp; Support</a></li>
+              <li><a href=""><i class="usr_clues"></i>My Favorite Stores</a></li>
+              <li><a href=""><i class="usr_signout"></i>Sign Out</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="sign-in" style=""><a>Sign In</a>
+
+          <div class="hoverContent">
+            <div class="sc_actLinks">
+              <div class="actLink_heading vip_on" id="vip_on">
+                <a id="show_loginpop"><span class="user_icn"></span>Login/Register</a>
+                <a id="join_vip_id" href="" class="btn orange vip_nuser_btn">Join VIP Club</a>
+
+              </div>
+              <ul>
+                <li><a><i class="usr_ordr"></i>My Orders</a></li>
+
+                <li><a><i class="usr_msg"></i>My Returns</a></li>
+
+                <li><a><i class="usr_wshlst"></i>Wishlist</a></li>
+
+                <li><a><i class="usr_profile"></i>My Profile</a></li>
+
+                <li><a href=""><i class="usr_msg"></i>My Chat</a></li>
+
+                <li><a><i class="usr_clues"></i>My CluesBucks</a></li>
+
+                <li><a><i class="usr_clues"></i>My CluesBucks<sup>+</sup></a></li>
+
+                <li><a><i class="usr_feed"></i>My Feedback</a></li>
+
+                <li><a href=""><i class="hlp_support"></i>Help &amp; Support</a></li>
+
+                <li><a><i class="usr_clues"></i>My Favorite Stores</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="cLocation" style="">
+        <span id="cPin">Share</span><a>Location</a></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="main_navigation">
+    <div class="ffix nav-down">
+      <div class="wrapper">
+        <ul>
+          <li class="made" id="made_in_india">
+            <a class="madein" href=""><img src="madeinindia.png" width="54" height="54"></a>
+          </li>
+          <li id="nav_44"><a>Mobiles &amp; More</a></li>
+          <li id="nav_43"><a>MEN</a></li>
+          <li id="nav_42"><a>WOMEN</a></li>
+          <li id="nav_46"><a>Home &amp; Kitchen</a></li>
+          <li id="nav_88"><a>Appliances</a></li>
+          <li id="nav_45"><a>Sports &amp; More</a></li>
+          <li id="nav_82"><a>Essentials</a></li>
+          <li id="nav_41"><a>Offers</a></li>
+          <li id="nav_0"><a style="cursor: pointer;" id="qoo10_link" href="" target="_blank">Global Shopping</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="wrapper maxStWrap">
+
+      <div id="main_data" class="wrapper pdp_info  ">
+
+        <div class="breadcrums">
+          <ul itemscope="" itemtype="">
+            <li itemprop="itemListElement" itemscope="" itemtype="">
+              <a itemprop="item" href="">
+                <span itemprop="name">Home</span>
+                <meta itemprop="position" content="1">
+              </a>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="">
+              <a itemprop="item" href="">
+                <span itemprop="name">Home &amp; Kitchen</span>
+                <meta itemprop="position" content="2">
+              </a>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="">
+              <a itemprop="item" href="">
+                <span itemprop="name">Home Furnishing</span>
+                <meta itemprop="position" content="3">
+              </a>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="">
+              <a itemprop="item" href="">
+                <span itemprop="name">Blankets &amp; Quilts</span>
+                <meta itemprop="position" content="4">
+              </a>
+            </li>
+
+            <li>
+              Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket </li>
+          </ul>
+        </div>
+
+        <div class="shd_box">
+
+          <div class="prd_img_gallery">
+            <div id="deta_container"></div>
+            <div class="visited_img">
+
+              <a data-formid="148466887" class="whishlist_ic" id="pdp_wishlist"></a>
+              <input name="mainImg" id="slrImg" data-src="" type="hidden">
+              <img class="img" id="zoom_picture_gall" src="148466887-103920503-1576125401.jpg" alt="Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket" data-zoom-image="">
+            </div>
+            <ul id="thumblist" style="display: none;">
+              <li class="thumb_click" id="thumb_click_0">
+                <a class="active" href="#" data-image="" data-zoom-image="">
+                  <img id="" src="148466887-103920503-1576125401_001.jpg" data-img="" alt="Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket">
+                </a>
+              </li>
+              <li class="thumb_click" id="thumb_click_1">
+                <a class="" href="#" data-image="" data-zoom-image="">
+                  <img id="" src="148466887-103920504-1576125404.jpg" data-img="" alt="Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div itemscope="" itemtype="http://schema.org/Product" class="prd_mid_info ">
+
+            <span itemprop="brand" style="display: none;">PHOENIX INTERNATIONAL</span>
+            <h1 itemprop="name">
+                    Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket                        
+                    </h1>
+
+            <img itemprop="image" src="148466887-103920503-1576125401.jpg" style="display: none;" alt="Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket">
+            <span itemprop="description" style="display: none;">Buy Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket online at a discounted price from polarkae.github.io. Shop Blankets &amp; Quilts products @ Lowest Prices. Shop now! Enjoy Free Shipping &amp; COD across India. EMI options available with Easy Return/Replacement Polices.</span>
+            <span class="pID">
+                                        <a href="">PHOENIX INTERNATIONAL</a>
+                                        Product Id : 148466887</span>
+            <meta itemprop="sku" content="148466887">
+            <meta itemprop="mpn" content="148466887">
+
+            <div class="rr">
+
+              <a href=""><span style="">Be the first to write a review</span></a>
+
+              <div class="badge " badgeid="made-in-india">
+              </div>
+
+            </div>
+
+            <div class="price spr_dis" itemprop="offers" itemtype="" itemscope="">
+              <link itemprop="url" href="">
+
+              <meta itemprop="price" content="943">
+
+              <span class="f_price" content="1069" data-attr="1069">EUR1069</span>
+
+              <meta itemprop="priceCurrency" content="INR">
+              <meta itemprop="priceValidUntil" content="">
+              <meta itemprop="name" content="jaipuri-razai-double-bed-cotton-jaipuri-razai-light-weight-with-cotton-filling-traditional-jaipuri-razai-comforter-quilt-jaipuri-rajai-blanket-ac-blanket-148466887">
+              <link itemprop="availability" content="">
+
+              <span id="sec_list_price_" class="o_price1" content="3499"><span>MRP:</span>EUR3,499</span>
+
+              <span class="discount" data-attr="69" content="69">69% off</span>
+
+              <p class="inc">Inclusive of all taxes</p>
+            </div>
+            <div id="pdp_page_widget">
+              <div class="super_discount" id="from_js">
+                <div class="discount_head"><span><i></i>Get this for as low as:<span class="low_price">EUR943</span></span><a id="cb_popup">How to earn CluesBucks<sup>+</sup><i class="iota"></i></a>
+                  <div class="instructions" id="ins_div">
+                    <div class="language">
+                      <p><span class="active" id="eng_tag">English</span><span id="hindi_tag">हिंदी</span> </p>
+                    </div>
+                    <ul id="eng">
+                      <li>1) Create account &amp; Earn 500 CB+ instantly (New User)</li>
+                      <li>2) Refer your friends &amp; Earn 700 CB+ instantly</li>
+                      <li>3) Get 100% Cashback as CB+ on all orders*</li>
+                      <li>4) Complete any COD order to earn CB/ CB+ </li>
+                      <li>5) Win CB/CB+ as part of our Promotions.</li>
+                      <li>6) Invite your friends to like products and help them earn 700 CB+ </li>
+                      <li id="eng_link"><a href="" target="_blank">Know more..</a><a href="" target="_blank">Policy</a> </li>
+                    </ul>
+                    <ul id="hindi" style="display: none;">
+                      <li>1) खाता बनाएं और तुरंत 500 CB+ कमाएँ (New User)</li>
+                      <li>2) अपने दोस्तों को रेफ़र करे और तुरंत 700 CB + कमाएँ| </li>
+                      <li>3) 100% कैशबैक* प्राप्त करें सभी ऑर्डर पर| </li>
+                      <li>4) CB / CB + कमाने के लिए कोई भी COD ऑर्डर पूरा करें </li>
+                      <li>5) हमारे प्रमोशन के भाग के रूप में CB / CB + जीतें।</li>
+                      <li>6) अपने दोस्तों को उत्पादों को लाइक करने के लिए आमंत्रित करें और उन्हें 700 CB + जीतने में मदद करें। </li>
+                      <li id="hind_link"><a href="" target="_blank">Know more..</a><a href="" target="_blank">Policy</a> </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="discount_table">
+                  <table width="100%">
+                    <thead>
+                      <tr>
+                        <th class="brd_rt brd_lt brd_tp">Original Price</th>
+                        <th class="no-padding">
+                          <table width="100%">
+                            <tbody>
+                              <tr>
+                                <th colspan="2" class="brd_rt brd_tp no-padding" height="22">Applicable for All Users</th>
+                              </tr>
+                              <tr>
+                                <th class="brd_tp" width="50%">Apply <span class="success">CluesBucks<sup>+</sup></span></th>
+                                <th class="brd_rt brd_tp" width="50%">Use Coupon <span class="success">MYSHOPCLUES</span></th>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </th>
+                        <th>Deal Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="brd_rt brd_lt brd_btm">EUR1069<i class="minus"></i></td>
+                        <td class="brd_btm no-padding">
+                          <table width="100%">
+                            <tbody>
+                              <tr>
+                                <td class="brd_tp" width="50%">(EUR19<i class="add"></i></td>
+                                <td class="brd_rt brd_tp" width="50%">EUR107)<i class="equal"></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <td class="deal_price">EUR943</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <p class="all_discount">*All discounts can be availed in the cart page</p>
+            <div class="ext_discount">
+            </div>
+            <div class="cbucks_balance">
+              <div><span class="cb_amt">Extra CluesBucks<i class="plus">+</i></span><span>only on VIP Club. </span><a href=""> Join Now</a></div>
+            </div>
+
+            <div class="des_info" itemprop="description">
+              <ul>
+                <li>Material : Cotton</li>
+              </ul>
+            </div>
+
+            <div class="offers_pdp">
+              <div class="head_div">
+                <span class="h1" id="new_offer_count"> 1 offers  Available for you</span>
+                <div class="more_less">
+                  <a href="#!" id="alloffer_btn_clck"> </a>
+                  <a href="#!" id="lessoffer_btn_clck" style="display: none;">- Less</a>
+                </div>
+              </div>
+              <ul>
+                <li class="pdp_offrs" id="first_promo">
+
+                  <div class="coupons_code">
+                    <span id="first__MYSHOPCLUES" value="MYSHOPCLUES" data-attr="MYSHOPCLUES">MYSHOPCLUES</span>
+
+                  </div>
+
+                  <div>
+                    <p>Get Extra 10 percent off on Prepaid Orders</p>
+                    <span>Use code "MYSHOPCLUES"                                                                            Min. Cart Value EUR149
+                                                                                                                |  Max. Discount EUR1000
+                                                                           
+                                        <a id="18791089" class="sc_tc">T&amp;C</a>
+                                                                        </span>
+                  </div>
+
+                </li>
+
+                <li class="pdp_offrs" id="rest_offers_0" style="display: none;">
+
+                  <div class="coupons_code">
+                    <span id="0__MYSHOPCLUES" value="MYSHOPCLUES" data-attr="MYSHOPCLUES">MYSHOPCLUES</span>
+
+                  </div>
+
+                  <div>
+                    <p>Get Extra 10 percent off on Prepaid Orders</p>
+                    <span>Use code "MYSHOPCLUES"                                                                        Min. Cart Value EUR149
+                                                                                                                |  Max. Discount EUR1000
+                                                                           
+                                    <a id="18791089" class="sc_tc">T&amp;C</a>
+                                                                </span>
+                  </div>
+
+                </li>
+
+              </ul>
+              <input id="hidden_coupon" style="display: none;" type="text">
+
+            <div class="offers" style="display: none;">
+              <p>
+                <span class="n_off" style="display: none;">
+                            Offer                            </span>
+                <span id="promo_txt">
+                                Use code "MYSHOPCLUES"                                    
+                                <a class="sc_tc" id="18791089">  T&amp;C</a>
+                                                                                                </span>
+                <span class="links" style="display: none;">
+                                <a class="v_offer">View offers</a>
+                            </span>
+              </p>
+              <ul id="promo_offr" style="display: none;">
+                <li>Use code "MYSHOPCLUES" <a id="18791089" class="sc_tc"> T&amp;C</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="f_variation">
+              <ul>
+                <li scname="Color" sctype="" id="273438">
+                  <div class="inf">
+                    <p>Select Color</p>
+                  </div>
+                  <span class="variant var " id="4172038" value="Multicolor">Multicolor</span>
+
+                </li>
+
+                <span class="vMore" style="display: none;"><a>View more</a></span>
+                <!--?php                        </ul-->
+              </ul>
+            </div>
+
+            <div class="buy_product" id="buy_now">
+
+              <button data-formid="148466887" id="add_cart" class="btn orange-white btn_effect">Add To Cart</button>
+              <button id="buy" data-formid="148466887" class="btn orange btn_effect">Buy Now</button>
+
+              <form id="buy_form_148466887" method="post" action="">
+                <input name="product_data[148466887][product_id]" value="148466887" type="hidden">
+                <input name="user_id" value="" id="form_user_id" type="hidden">
+                <input name="visitor_id" value="" id="form_visitor_id" type="hidden">
+                <input name="product_data[148466887][name]" value="Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket" type="hidden">
+                <input name="product_data[148466887][is_cod]" value="Y" type="hidden">
+                <input id="purl" name="product_data[148466887][purl]" value="jaipuri-razai-double-bed-cotton-jaipuri-razai-light-weight-with-cotton-filling-traditional-jaipuri-razai-comforter-quilt-jaipuri-rajai-blanket-ac-blanket-148466887.html" type="hidden">
+
+                <input id="ColorId" name="product_data[148466887][product_options][273438]" value="" type="hidden">
+                <input id="ColorName" name="product_data[148466887][product_options_display]" value="" type="hidden">
+                <input id="quantityId" name="product_data[148466887][amount]" value="1" type="hidden">
+
+              </form>
+            </div>
+
+            <div class="pin_location">
+              <div class="check_pincode">
+                <div style="display: none;">item is available on <span>201301</span>
+                  <a>Change</a>
+                </div>
+                <div id="toggleMe" class="del_info" style="display: none;"></div>
+                <div id="pd_pin">
+                  <div class="form">
+                    <input id="zip" class="pin_type blue_line" placeholder="Enter pincode for delivery" type="text">
+                    <input id="check_shipping" name="button" value="Check" class="btn blue" data-itemid="148466887" type="button">
+                  </div>
+                </div>
+              </div>
+              <div class="status_i">
+                <ul id="delDetails">
+                  <li>COD <span id="iscod">Available</span></li>
+                  <li id="shippingcharge">Free Shipping</li>
+                  <li id="del_time">Delivered <span id="delivery">2-5 Business Days</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="oth_feaus">
+              <ul>
+
+                <li class="returns">
+                  <span>Easy Replacement Only</span>
+                  <i class="icon_info">
+                                    <span></span>
+                                    <div class="pt">
+                                        <div class="tooltipPopup">
+                                            
+                                            <p>If applicable customer can place a return/replacement request within 10 Days of order delivery. </p> <p>In case of damaged/missing/wrong product or empty parcel, the return/replacement request should be placed within 2 days of delivery.</p>                                           
+                                            <a href="" target="_blank">Know More</a>
+                                        </div>
+                                  </div>
+                              </i>
+                </li>
+                <li class="payOptions"><span>Payment Options:</span> (Credit Card , Debit Card , Net Banking , Wallets , COD)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="prd_right_info">
+            <div itemprop="seller" itemscope="" itemtype="" class="sllr_info">
+              <span class="s_by">Sold by :</span>
+              <h3 itemprop="name">phonix international</h3>
+              <p>Jaipur , Rajasthan</p>
+              <div class="ratings">
+                <span class="val">3.4</span>
+                <span>(1) Reviews</span>
+              </div>
+              <a href="">Visit Seller Store</a>
+              <div class="trm">Top Rated Merchant</div>
+              <div id="chat_container"></div>
+              <div id="button-chat" class="ask_mi" style="display: none;">
+                <button class="seller_chat" style="display: block;" type="button" time="24" status="1">Chat with Seller</button>
+                <form name="myForm" action="" method="post" style="display: none;">
+                  <div class="form_group">
+                    <input name="firstname" value="" placeholder="First name *" type="text">
+                  </div>
+
+                  <div class="form_group">
+                    <input name="lastname" value="" placeholder="Last name *" type="text">
+                  </div>
+                  <div class="form_group">
+                    <input name="emailid" value="" placeholder="Email id *" type="text">
+                  </div>
+                  <input class="btn orange" id="ckey" value="Submit" type="button">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="bigsalebnr" class="big_sale_section">
+          <div class="tab_panel">
+            <ul>
+              <li id="t_0" cat_id="61875" seo_name="home-furnishing-blankets-and-quilts" filt="cat_id=61875&amp;sort_by=bestsellers&amp;sort_order=desc&amp;scl=1" new_filt="sort_by=bestsellers&amp;sort_order=desc&amp;scl=1" class="active"><span>Best Selling Products in Blankets &amp; Quilts</span></li>
+              <li id="t_1" cat_id="337" seo_name="home-garden" filt="cat_id=337&amp;df[]=61.00-80.00&amp;df[]=80.00-100.00&amp;fsrc=discount_percentage&amp;scl=1" new_filt="df[]=61.00-80.00&amp;df[]=80.00-100.00&amp;fsrc=discount_percentage&amp;scl=1"><span>More Products with min 60% Off</span></li>
+              <li id="t_2" cat_id="60661" seo_name="kitchen-home-furnishing" filt="cat_id=60661&amp;sort_by=bestsellers&amp;sort_order=desc&amp;scl=1" new_filt="sort_by=bestsellers&amp;sort_order=desc&amp;scl=1"><span>Best Selling Products in Home Furnishing</span></li>
+              <li id="t_3" cat_id="337" seo_name="home-garden" filt="cat_id=337&amp;sort_by=newarrivals&amp;sort_order=desc&amp;scl=1" new_filt="sort_by=newarrivals&amp;sort_order=desc&amp;scl=1" class=""><span>New Arrivals in Home &amp; Kitchen</span></li>
+            </ul>
+          </div>
+          <div class="row cat_promotion_box hack" data-attr="t_0">
+            <div class="tabbing">
+              <div class="tabbing_products">
+                <ul class="regular slider slick-initialized slick-slider" id="lt_0">
+                  <button type="button" data-role="none" class="slick-prev slick-arrow slick-disabled" aria-label="Previous" role="button" aria-disabled="true" style="display: inline-block;">Previous</button>
+                  <div aria-live="polite" class="slick-list draggable">
+                    <div class="slick-track" style="opacity: 1; width: 8175px; transform: translate3d(0px, 0px, 0px);" role="listbox">
+                      <li class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide10">
+                        <a target="_blank" href="" tabindex="0"><img src="153277664-116830624-1672053623.jpg" alt="">
+                          <h4>Hari Overseas Printed Polar Blanket Pack of 1 (Lightweight, Wool, Assorted Color)</h4>
+                          <p>EUR259</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide11">
+                        <a target="_blank" href="" tabindex="0"><img src="no_image.gif" alt="">
+                          <h4>HDECORE Single Bed Fleece Blanket (Maroon)</h4>
+                          <p>EUR299</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide12">
+                        <a target="_blank" href="" tabindex="0"><img src="no_image.gif" alt="">
+                          <h4>HDECORE Single Bed Blanket (PRNT-1)</h4>
+                          <p>EUR999</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide13">
+                        <a target="_blank" href="" tabindex="0"><img src="83168364-41737644-1665390742.jpg" alt="">
+                          <h4>Krg Enterprises Double Bed Silk Jaipuri Razai</h4>
+                          <p>EUR1299</p>
+                          <div class="multi_tags_pl"></div>
+                        </a>
+                      </li>
+                      <li class="slick-slide slick-active" data-slick-index="4" aria-hidden="false" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide14">
+                        <a target="_blank" href="" tabindex="0"><img src="83206577-11111176-1654517329.jpg" alt="">
+                          <h4>Krg Jaipuri Double  Razai</h4>
+                          <p>EUR1299</p>
+                          <div class="multi_tags_pl"></div>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide15">
+                        <a target="_blank" href="" tabindex="-1"><img src="83167756-41727883-1653567638.jpg" alt="">
+                          <h4>Krg Enterprises  jaipuri razai rajai cotton blanket comforter SINGLE BEDED MYM1004</h4>
+                          <p>EUR999</p>
+                          <div class="multi_tags_pl"></div>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide16">
+                        <a target="_blank" href="" tabindex="-1"><img src="83206575-11111046-1653512106.jpg" alt="">
+                          <h4>Krg Jaipuri Floral Print Pure Cotton Double Bed Quilt Jaipuri Razai</h4>
+                          <p>EUR1299</p>
+                          <div class="multi_tags_pl"></div>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide17">
+                        <a target="_blank" href="" tabindex="-1"><img src="82077965-26897270-1667815949.jpg" alt="">
+                          <h4>Comfort Electric Blanket Single Bed</h4>
+                          <p>EUR1999</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="8" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide18">
+                        <a target="_blank" href="" tabindex="-1"><img src="no_image.gif" alt="">
+                          <h4>Home Set of 2 Jaipuri Silk Razai with Gold Prints</h4>
+                          <p>EUR1199</p>
+                          <div class="multi_tags_pl"></div>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="9" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide19">
+                        <a target="_blank" href="" tabindex="-1"><img src="98220738-32072639-1653679102.jpg" alt="">
+                          <h4>Krg Enterprises Floral Double Quilts  Comforters Multicolor Jaipuri Razai Double Bed Quilt</h4>
+                          <p>EUR1599</p>
+                          <div class="multi_tags_pl"></div>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="10" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide110">
+                        <a target="_blank" href="" tabindex="-1"><img src="92882123-41391959-1689253103.jpg" alt="">
+                          <h4>HDECORE Set of 2 double bed blanket01prnt01chk</h4>
+                          <p>EUR999</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="11" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide111">
+                        <a target="_blank" href="" tabindex="-1"><img src="153296803-116894040-1678978237.jpg" alt="">
+                          <h4>UnV Light Weight Micro Fleece Blanket for Single Bed Suitable for All Seasons BLUE</h4>
+                          <p>EUR319</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="12" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide112">
+                        <a target="_blank" href="" tabindex="-1"><img src="79304500-14410539-1653562774.jpg" alt="">
+                          <h4>Krg Enterprises Jaipuri Handmade Sanganeri Print Ethnic Double Bed Quilt Rajai (Assorted color)</h4>
+                          <p>EUR1299</p>
+                          <div class="multi_tags_pl"></div>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="13" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide113">
+                        <a target="_blank" href="" tabindex="-1"><img src="83206485-11099477-1653543649.jpg" alt="">
+                          <h4>Krg Jaipuri Print Cotton Double Bed Razai Quilt -301</h4>
+                          <p>EUR1399</p>
+                          <div class="multi_tags_pl"></div>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="14" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide114">
+                        <a target="_blank" href="" tabindex="-1"><img src="no_image.gif" alt="">
+                          <h4>HDECORE Single Bed Blanket Set Of 4 pcs</h4>
+                          <p>EUR999</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="15" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide115">
+                        <a target="_blank" href="" tabindex="-1"><img src="127610123-70084372-1667816832.jpg" alt="">
+                          <h4>Phoenix International Single Quilt, Indian Quilt, Razai, Jaipuri Razai, Blanket, Q</h4>
+                          <p>EUR1496</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="16" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide116">
+                        <a target="_blank" href="" tabindex="-1"><img src="148466915-103920576-1576125975.jpg" alt="">
+                          <h4>Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket</h4>
+                          <p>EUR1069</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="17" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide117">
+                        <a target="_blank" href="" tabindex="-1"><img src="148466938-103920649-1576126296.jpg" alt="">
+                          <h4>Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket</h4>
+                          <p>EUR1049</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="18" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide118">
+                        <a target="_blank" href="" tabindex="-1"><img src="148466930-103920625-1576126180.jpg" alt="">
+                          <h4>Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket</h4>
+                          <p>EUR1539</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="19" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide119">
+                        <a target="_blank" href="" tabindex="-1"><img src="80695130-17311835-1653545349.jpg" alt="">
+                          <h4>Krg Enterprises Jaipuri Single Bed Pure Cotton Quilt Rajai RAZAI  SRM2004</h4>
+                          <p>EUR899</p>
+                          <div class="multi_tags_pl"></div>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="20" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide120">
+                        <a target="_blank" href="" tabindex="-1"><img src="148423040-103838721-1575355117.jpg" alt="">
+                          <h4>I Wish Microfibre Reversible 250 Gsm Winter Comforter Blanket Quilt Lightweight Duvet (Teal/Dark Blue, Queen)</h4>
+                          <p>EUR1513</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="21" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide121">
+                        <a target="_blank" href="" tabindex="-1"><img src="148466941-103920658-1576126346.jpg" alt="">
+                          <h4>Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket</h4>
+                          <p>EUR1209</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="22" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide122">
+                        <a target="_blank" href="" tabindex="-1"><img src="80425816-9993156-1655562824.jpg" alt="">
+                          <h4>Krg EnterprisesJaipuri Traditional Ethnic Double Cotton Golden Printed Bed Quilt/ Razai</h4>
+                          <p>EUR1299</p>
+                          <div class="multi_tags_pl"></div>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="23" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide123">
+                        <a target="_blank" href="" tabindex="-1"><img src="129823539-72913460-1667816264.jpg" alt="">
+                          <h4>Krg  Razai, Jaipuri Razai, Blanket, Jaipuri Quilt, Double bed Quilt</h4>
+                          <p>EUR1199</p>
+                        </a>
+                      </li>
+                      <li class="view_all slick-slide" data-slick-index="24" aria-hidden="true" style="width: 327px;" tabindex="-1" role="option" aria-describedby="slick-slide124">
+                        <a href="" tabindex="-1"><img src="view_all.png" alt=""></a>
+                      </li>
+                    </div>
+                  </div>
+                  <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;" aria-disabled="false">Next</button>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row cat_promotion_box hack" data-attr="t_3" style="display: none;">
+            <div class="tabbing">
+              <div class="tabbing_products">
+                <ul class="regular slider slick-initialized slick-slider" id="lt_3">
+                  <button type="button" data-role="none" class="slick-prev slick-arrow slick-disabled" aria-label="Previous" role="button" aria-disabled="true" style="display: inline-block;">Previous</button>
+                  <div aria-live="polite" class="slick-list draggable">
+                    <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);" role="listbox">
+                      <li class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide00">
+                        <a target="_blank" href="" tabindex="0"><img src="153428306-117331157-1692082947.jpg" alt="">
+                          <h4>Foldable Portable Stool  for Camping, Outdoors, Picnic, Fishing, Beach, Family Outing. Strong, Durable</h4>
+                          <p>EUR399</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide01">
+                        <a target="_blank" href="" tabindex="0"><img src="153428102-117330510-1692003120.jpg" alt="">
+                          <h4>VSP VASTU SAMADHAN -  77 COPPER DOWSING ROD NEW For Everything From Looking For Lost Items, Ghost Hunting, Water, Auras</h4>
+                          <p>EUR1800</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide02">
+                        <a target="_blank" href="" tabindex="0"><img src="153427959-117330026-1691940321.jpg" alt="">
+                          <h4>Darhsani Harbal Juna agarbatti for puja insense stick for puja, agarbatti for puja,600 g)</h4>
+                          <p>EUR270</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide03">
+                        <a target="_blank" href="" tabindex="0"><img src="153427958-117330024-1691938399.jpg" alt="">
+                          <h4>Darhsani Herbal agarbatti for puja insense stick for puja, agarbatti for puja, jhuna agarbatti 500 g)</h4>
+                          <p>EUR250</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide slick-active" data-slick-index="4" aria-hidden="false" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide04">
+                        <a target="_blank" href="" tabindex="0"><img src="153427957-117330021-1691926920.jpg" alt="">
+                          <h4>Darshini Herbal Jhuna And Chandan Agrbatti ,insense stick agarbatti 600 g</h4>
+                          <p>EUR270</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide05">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427953-117330005-1691916857.jpg" alt="">
+                          <h4>YTC 1 BEDSHEETS Queen Size Bed 90 X 100 Inches Approx with 2 Pillow Covers18 X 30 InchesApprox Floral Print Multicolur</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide06">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427952-117330004-1691918318.jpg" alt="">
+                          <h4>YTC 1 BEDSHEETS Queen Size Bed 90 X 100 Inches Approx with 2 Pillow Covers18 X 30 InchesApprox Floral Print Multicolur</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide07">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427951-117330003-1691917938.jpg" alt="">
+                          <h4>YTC 1 BEDSHEETS Queen Size Bed 90 X 100 Inches Approx with 2 Pillow Covers18 X 30 InchesApprox Floral Print Multicolur</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="8" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide08">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427947-117329988-1691918494.jpg" alt="">
+                          <h4>YTC 1 BEDSHEETS Queen Size Bed 90 X 100 In(+-)with 2 Pillow Covers18 X 30 Inc(+-)Floral Print Grey  Peach Colour</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="9" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide09">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427944-117329978-1691896359.jpg" alt="">
+                          <h4>Darshini Herbal Jhuna And Chandan Agrbatti ,insense stick ,jhuna chandan agarbatti, chandan agarbatti (500 g)</h4>
+                          <p>EUR260</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="10" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide010">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427941-117329942-1691861006.jpg" alt="">
+                          <h4>Darshini Herbal Jhuna And Chandan Agrbatti, 10 pack (800 stick)  with</h4>
+                          <p>EUR320</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="11" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide011">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427934-117329913-1691918636.jpg" alt="">
+                          <h4>YTC 1 BEDSHEETS Queen Size Bed 90 X 100 Inches Approx with 2 Pillow Covers18 X 30 InchesApprox Floral Print Multicolur</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="12" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide012">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427925-117329909-1691858119.jpg" alt="">
+                          <h4>YTC 1 BEDSHEETS Queen Size Bed 90 X 100 Inches Approx with 2 Pillow Covers18 X 30 InchesApprox Floral Print Multicolur</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="13" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide013">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427924-117329908-1691856532.jpg" alt="">
+                          <h4>YTC 1 BEDSHEETS Queen Size Bed 90 X 100 Inches Approx with 2 Pillow Covers18 X 30 InchesApprox Floral Print Multicolur</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="14" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide014">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427923-117329906-1691855737.jpg" alt="">
+                          <h4>YTC 1 BEDSHEETS Queen Size Bed 90 X 100 Inches Approx with 2 Pillow Covers18 X 30 InchesApprox Floral Print Multicolur</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="15" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide015">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427922-117329904-1691855065.jpg" alt="">
+                          <h4>YTC 1 BEDSHEETS Queen Size Bed 90 X 100 Inches Approx with 2 Pillow Covers18 X 30 InchesApprox Floral Print Multicolur</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="16" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide016">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427921-117329902-1691854400.jpg" alt="">
+                          <h4>YTC 1 BEDSHEETS Queen Size Bed 90 X 100 Inches Approx with 2 Pillow Covers18 X 30 InchesApprox Floral Print Multicolur</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="17" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide017">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427919-117329896-1691853067.jpg" alt="">
+                          <h4>YTC 1 BEDSHEETS Queen Size Bed 90 X 100 Inches Approx with 2 Pillow Covers18 X 30 InchesApprox Floral Print Multicolur</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="18" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide018">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427918-117329894-1691852294.jpg" alt="">
+                          <h4>YTC 1 BEDSHEETS Queen Size Bed 90 X 100 Inches Approx with 2 Pillow Covers 18 X 30 Inches Approx Solid Print Multicolo</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="19" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide019">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427917-117329892-1691850897.jpg" alt="">
+                          <h4>YTC BEDSHEETS for 1Queen Size Bed 90 X 100 Inches Approx with 2 Pillow Covers18 X 30 Inches Approx Solid Print Multicolo</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="20" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide020">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427914-117329882-1691850013.jpg" alt="">
+                          <h4>YTC BEDSHEETS for1 Queen Size Bed 90 X 100 Inches Approx with 2 PillowCovers 18 X 30 Inches Approx Solid Print Multicolo</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="21" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide021">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427911-117329851-1691848845.jpg" alt="">
+                          <h4>YTC BEDSHEETS for Queen Size Bed 90 X 100 Inches Approxwith 2 Pillow Covers18 X 30 Inches Approx Mandal Print Multicolur</h4>
+                          <p>EUR699</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="22" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide022">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427878-117329754-1691839009.jpg" alt="">
+                          <h4>BEDSHEET  1 King Size (9ft X 9ft Approx) 2 Pillow Covers (1.8 ft X 2.7ft Approx)  Floral Design Pink  Multicolour</h4>
+                          <p>EUR799</p>
+                        </a>
+                      </li>
+                      <li class="slick-slide" data-slick-index="23" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide023">
+                        <a target="_blank" href="" tabindex="-1"><img src="153427874-117329746-1691838480.jpg" alt="">
+                          <h4>Iota, Plastic Squeegee Decal Wrap Applicator, Yellow Color, Pack of 2, Sqz205</h4>
+                          <p>EUR249</p>
+                        </a>
+                      </li>
+                      <li class="view_all slick-slide" data-slick-index="24" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide024">
+                        <a href="" tabindex="-1"><img src="view_all.png" alt=""></a>
+                      </li>
+                    </div>
+                  </div>
+                  <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;" aria-disabled="false">Next</button>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="customer_faques" class="customer_faq b_section" style="display: none;">
+        <h4>Customer Questions &amp; Answers <a id="ask_question" class="btn blue-white">Ask Question</a></h4>
+        <div class="shd_box">
+          <ul id="ques_ans_list"></ul>
+          <div id="load_more_qa" class="load_more" style="display: none;">
+            <a type="button" class="btn btn_effect">Load More</a>
+          </div>
+        </div>
+      </div>
+      <div id="div-gpt-ad-1479294007941-0" style="text-align: center;">
+
+      </div>
+      <div id="c1x-ads_new" class="row cat_promotion_box productpage_c1xads"></div>
+
+      <div class="selected_product_tabbing">
+        <span class="pDetail">Product Details:</span>
+        <h2>Jaipuri Razai Double Bed Cotton Jaipuri Razai Light Weight With Cotton Filling Traditional Jaipuri Razai/Comforter/Quilt /Jaipuri Rajai/Blanket/Ac Blanket</h2>
+        <div class="shd_box with_videoReview">
+          <div class="tabbing_nav">
+            <ul>
+              <li data-tab="1" class="active  pd-descr"><a>Product Description</a></li>
+              <li class=" pd-spec" data-tab="2"><a>Specification</a></li>
+
+              <li data-tab="3" class=" pd-otherinfo"><a>Legal Information</a></li>
+            </ul>
+            <div class="scroll_hide"></div>
+          </div>
+          <div class="tabbing_info">
+            <div id="product_description" class="pd_tabs active pd_data" data-content="1">
+              <div id="full_desc_1">
+                World Famous Jaipuri Pure Cotton Double Bed Razai (Quilt) In Traditional Sanganeri Print Of Rajasthan. This Spectacular Quilt Will Enhance The Beauty Of Your Home Decor As Well As Provide You Warmth On Cooler Winter Nights. The Lightweight Jaipuri Quilt Is Filled With Pure 100% Cotton &amp; Outer Fabric Has Been Used Of Pure Cotton.It provides a great deal of warmth even in the very cold weather primarily due to the insulating effects of the large amount of air trapped in the cotton. These good looking, fluffy, hand-made Indian quilts are a speciality of Jaipur made by traditional craftsmen with perfection which can easily be felt while using the product. Stitching design on the razai has been done with the perfection so that the trapped cotton doesnt lose its place which makes the razai more durable and adds more life to the product. The cotton used is feather light which adds beauty to the product which results in requiring less space to store the quilt and is easier to maintain as compared to traditional old fashioned heavy weight quilts. This mesmerising product can be used throughout the year even in the AC while sleeping. The cotton used as filling is world class which is longer lasting also it doesnt lose its shape even if the quilt is used for a very very long time.. This Quilt Is A Perfect Gift For Weddings, Housewarmings, Engagements And Anniversaries </div>
+              <div class="pdp_detail_imgs">
+                <ul class="grid" id="grid">
+                </ul>
+              </div>
+            </div>
+            <div id="specification" class="pd_tabs" data-content="2">
+              <table border="0" width="45%" cellspacing="0" cellpadding="0">
+                <tbody>
+
+                  <tr class="grpDesc">
+                    <td colspan="2">
+                      <h3 class="active">Key Feature</h3></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Brand</span></td>
+
+                    <td width="70%"><span class="stext">:&nbsp;&nbsp;&nbsp;PHOENIX INTERNATIONAL</span></td>
+                  </tr>
+
+                  <tr class="grpDesc">
+                    <td colspan="2">
+                      <h3 class="active">Color Specifications</h3></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Colors</span></td>
+
+                    <td width="70%"><span class="stext">:&nbsp;&nbsp;&nbsp;Multicolor</span></td>
+                  </tr>
+
+                  <tr class="grpDesc">
+                    <td colspan="2">
+                      <h3 class="active">Pattern Specifications</h3></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Pattern</span></td>
+
+                    <td width="70%"><span class="stext">:&nbsp;&nbsp;&nbsp;Abstract</span></td>
+                  </tr>
+
+                  <tr class="grpDesc">
+                    <td colspan="2">
+                      <h3 class="active">Blankets Fabric Specifications</h3></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Blankets Fabric</span></td>
+
+                    <td width="70%"><span class="stext">:&nbsp;&nbsp;&nbsp;Cotton</span></td>
+                  </tr>
+
+                  <tr class="grpDesc">
+                    <td colspan="2">
+                      <h3 class="active">Basic Features</h3></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Material</span></td>
+
+                    <td width="70%"><span class="stext">:&nbsp;&nbsp;&nbsp;Cotton</span></td>
+                  </tr>
+
+                  <tr class="grpDesc">
+                    <td colspan="2">
+                      <h3 class="active">Product Specifications</h3></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Type</span></td>
+
+                    <td width="70%"><span class="stext">:&nbsp;&nbsp;&nbsp;Quilts &amp; Covers</span></td>
+                  </tr>
+
+                  <tr class="grpDesc">
+                    <td colspan="2">
+                      <h3 class="active">Type Specifications</h3></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Type</span></td>
+
+                    <td width="70%"><span class="stext">:&nbsp;&nbsp;&nbsp;Quilts &amp; Covers</span></td>
+                  </tr>
+
+                  <tr class="grpDesc">
+                    <td colspan="2">
+                      <h3 class="active">Set Specifications</h3></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Set Of</span></td>
+
+                    <td width="70%"><span class="stext">:&nbsp;&nbsp;&nbsp;1</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div id="other_info" class="pd_tabs" data-content="3">
+              <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td colspan="2">
+                      <h3 class="active">More Details</h3></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Maximum Retail Price (inclusive of all taxes)</span></td>
+                    <td width="70%"><span class="stext">Rs.3499</span></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Common or Generic Name</span></td>
+                    <td width="70%"><span class="stext">Jaipuri Razai</span></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Net Contents / Net Quantity</span></td>
+                    <td width="70%"><span class="stext">1</span></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Manufacturer's Name and Address</span></td>
+                    <td width="70%"><span class="stext">Delhi</span></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Packer's Name and Address</span></td>
+                    <td width="70%"><span class="stext">-</span></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Marketer's name and Address</span></td>
+                    <td width="70%"><span class="stext">-</span></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Importer's Name and Address</span></td>
+                    <td width="70%"><span class="stext">-</span></td>
+                  </tr>
+                  <tr>
+                    <td width="30%"><span>Country of Origin / Manufacture / Assembly</span></td>
+                    <td width="70%"><span class="stext">India</span></td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="pdp_rnr" class="pdp_rnr">
+        <h2>Rating &amp; Reviews <span></span></h2>
+
+        <div class="shd_box">
+          <div class="rnr_details">
+            <div class="rnr_graph">
+              <div class="star_rating_point">
+                <span>0</span>
+                <svg viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="45" id="gray"></circle>
+                  <circle cx="50" cy="50" r="45" id="circle_fill" class="c_fill" style=""></circle>
+                </svg>
+              </div>
+              <div class="prd_ratings"><span class="star"><span style="width: 0px;"></span></span>
+              </div>
+            </div>
+
+            <div class="rnr_bar">
+              <div class="ttl_reviews">
+                <div class="group-bar">
+                  <span>5</span>
+                  <div class="bar">
+                    <div class="bar-fill  star5  scale1" style="width: 0%;">
+                    </div>
+                  </div>
+                  <span>0</span>
+                </div>
+                <div class="group-bar">
+                  <span>4</span>
+                  <div class="bar">
+                    <div class="bar-fill  star5  scale1" style="width: 0%;">
+                    </div>
+                  </div>
+                  <span>0</span>
+                </div>
+                <div class="group-bar">
+                  <span>3</span>
+                  <div class="bar">
+                    <div class="bar-fill  star3  scale1" style="width: 0%;">
+                    </div>
+                  </div>
+                  <span>0</span>
+                </div>
+                <div class="group-bar">
+                  <span>2</span>
+                  <div class="bar">
+                    <div class="bar-fill  star1  scale1" style="width: 0%;">
+                    </div>
+                  </div>
+                  <span>0</span>
+                </div>
+                <div class="group-bar">
+                  <span>1</span>
+                  <div class="bar">
+                    <div class="bar-fill  star1  scale1" style="width: 0%;">
+                    </div>
+                  </div>
+                  <span>0</span>
+                </div>
+              </div>
+              <p>0 Ratings, 0 Reviews</p>
+            </div>
+
+            <div class="write_rnr">
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="desc-note" style="font-size: 14px; margin-top: 20px;">
+          <span>
+               <strong>Please Note:</strong> Seller assumes all responsibility for the products listed and sold . If you want to report an intellectual property right violation of this product, please click 
+           </span><a href="">here.</a>
+        </div>
+      </div>
+    </div>
+
+    <span class="in-stock" style="display: none;">In Stock</span>
+    </div>
+
+    <div id="walmart_login" class="b_overlay" style="display: none;">
+      <div class="popupModel">
+        <a class="close"></a>
+        <div class="walmart">
+          <span class="pop_heading">Please provide Best Price credentials</span>
+          <form action="">
+            <input placeholder="enter your username" id="walmart_username" maxlength="30" name="" type="text">
+            <input placeholder="enter your password" id="walmart_password" maxlength="30" name="" type="password">
+            <span id="walmart_error" class="error_msg"></span>
+            <input name="" class="btn blue" id="walmart_login_btn" value="Login" type="button">
+            <p>New to Best Price <a href="">Register</a></p>
+            <p>Best Price membership is available for business only.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12">
+      <div class="col-lg-12 text-center Margin20" style="position: relative;">
+        <div id="blobk_1_jump" class="pnlJump"></div>
+        <div class="TxtHeading" id="listNewArrivals"> <span> </span> </div>
+      </div>
+      <ul class="lstProducts" id="block_1"></ul>
+    </div>
+  </div>
+
+  <input value="," name="bp" id="bp" type="hidden">
+
+
+  <footer>
+    <div class="footer_nav">
+      <div class="wrapper">
+        <div class="sc_callouts">
+          <h4>Shopper Central</h4>
+          <ul>
+            <li><a href="">Easy Returns &amp; Replacement</a></li>
+            <li><a id="signupLog">Sign In/Register</a></li>
+            <li><a href="">Our Policies</a></li>
+            <li><a href="">CluesBucks</a></li>
+            <li><a href="">Payment Options</a></li>
+            <li><a href="">ShopClues Surety</a></li>
+            <li><a href="">FAQs (Help)</a></li>
+            <li><a href="">Service Centers</a></li>
+            <li><a href="">User Agreement</a></li>
+          </ul>
+        </div>
+        <div class="sc_callouts">
+          <h4>Merchant Central</h4>
+          <ul>
+            <li><a href="">Merchant Panel</a></li>
+            <li><a href="">How To Sell</a></li>
+            <li><a href="">Commission Structure</a></li>
+            <li><a href="">Fullfillment Policy</a></li>
+            <li><a href="">Policies &amp; Rules</a></li>
+            <li><a href="">User Agreement</a></li>
+            <li><a href="">Testimonials</a></li>
+            <li><a href="">Seller Summit</a></li>
+            <li><a href="">Merchant Blog</a></li>
+            <li><a href="">Developer Resources</a></li>
+          </ul>
+        </div>
+        <div class="sc_callouts">
+          <h4><a href="">About Us</a></h4>
+          <ul>
+            <li><a href="">History</a></li>
+            <li><a href="">Band of Trust</a></li>
+            <li><a href="">In the News</a></li>
+            <li><a href="">Awards</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
+        <div class="sc_callouts">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="">Merchant Support</a></li>
+            <li><a href="">Bulk Orders</a></li>
+            <li><a href="">Press</a></li>
+          </ul>
+        </div>
+        <div class="sc_callouts">
+          <h4>Press</h4>
+          <ul>
+            <li><a href="">In the News</a></li>
+          </ul>
+        </div>
+        <div class="sc_nl-signup" style="display: none;">
+          <h5>Special Offers</h5>
+          <p>Sign Up To Access Our Special Offers</p>
+          <input placeholder="Enter your email" name="" type="text">
+          <input value="Search" name="" type="submit">
+        </div>
+      </div>
+    </div>
+    <div class="sc_connection">
+      <div class="wrapper">
+        <div class="sc_socialconnection" itemscope="" itemtype="">
+          <h3>Keep In Touch</h3>
+          <ul>
+            <link itemprop="url" href="">
+            <li>
+              <a itemprop="sameAs" href="" class="sc_ft_facbook"></a>
+            </li>
+            <li>
+              <a itemprop="sameAs" href="" class="sc_ft_pintrest"></a>
+            </li>
+            <li>
+              <a itemprop="sameAs" href="" class="sc_ft_twitter"></a>
+            </li>
+            <li>
+              <a itemprop="sameAs" href="" class="sc_ft_google"></a>
+            </li>
+            <li>
+              <a itemprop="sameAs" href="" class="sc_ft_youtube"></a>
+            </li>
+            <li>
+              <a itemprop="sameAs" href="" class="sc_ft_linkedin"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="sc_trustedpayment">
+          <h3>100% Secure and Trusted Payment</h3>
+          <img src="pgateway_dkt@2x.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="scfooter_Category">
+      <div class="wrapper">
+        <h3>Our Leading Categories</h3>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Mobile &amp; Tablets:</a></li>
+          <li> <a target="_blank" href="">Android Phones</a></li>
+          <li> | <a target="_blank" href="">Smartphones</a></li>
+          <li> | <a target="_blank" href="">Feature Phones</a></li>
+          <li> | <a target="_blank" href="">Unboxed Phones</a></li>
+          <li> | <a target="_blank" href="">Refurbished Phones</a></li>
+          <li> | <a target="_blank" href="">Tablets</a></li>
+          <li> | <a target="_blank" href="">CDMA Phones</a></li>
+          <li> | <a target="_blank" href="">Value Added Services</a></li>
+          <li> | <a target="_blank" href="">Sell Old/ Used Mobiles</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Computers:</a></li>
+          <li> <a target="_blank" href="">Laptops</a></li>
+          <li> | <a target="_blank" href="">Printers</a></li>
+          <li> | <a target="_blank" href="">Routers</a></li>
+          <li> | <a target="_blank" href="">Ink &amp; Toner Cartridges</a></li>
+          <li> | <a target="_blank" href="">Monitors</a></li>
+          <li> | <a target="_blank" href="">Video Games</a></li>
+          <li> | <a target="_blank" href="">Unboxed &amp; Refurbished Laptops</a></li>
+          <li> | <a target="_blank" href="">Assembled Desktops</a></li>
+          <li> | <a target="_blank" href="">Data Cards</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">TV, Audio &amp; Large Appliances:</a></li>
+          <li><a target="_blank" href="">TVs &amp; DTH</a></li>
+          <li> | <a target="_blank" href="">Home Theatre Systems</a></li>
+          <li> | <a target="_blank" href="">Hidden Cameras &amp; CCTVs</a></li>
+          <li> | <a target="_blank" href="">Refrigerators</a></li>
+          <li> | <a target="_blank" href="">Washing Machines</a></li>
+          <li> | <a target="_blank" href="">Air Conditioners</a></li>
+          <li> | <a target="_blank" href="">Cameras</a></li>
+          <li> | <a target="_blank" href="">Speakers</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Mobile &amp; Laptop Accessories:</a></li>
+          <li> <a target="_blank" href="">Headphones</a></li>
+          <li> | <a target="_blank" href="">Power Banks</a></li>
+          <li> | <a target="_blank" href="">Backpacks</a></li>
+          <li> | <a target="_blank" href="">Mobile Cases &amp; Covers</a></li>
+          <li> | <a target="_blank" href="">Pen Drives</a></li>
+          <li> | <a target="_blank" href="">External Hard Disks</a></li>
+          <li> | <a target="_blank" href="">Mouse</a></li>
+          <li> | <a target="_blank" href="">Smart Watches &amp; Fitness Bands</a></li>
+          <li> | <a target="_blank" href="">MicroSD Cards</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Appliances:</a></li>
+          <li> <a target="_blank" href="">Trimmers</a></li>
+          <li> | <a target="_blank" href="">Hair Dryers</a></li>
+          <li> | <a target="_blank" href="">Emergency Lights</a></li>
+          <li> | <a target="_blank" href="">Water Purifiers</a></li>
+          <li> | <a target="_blank" href="">Electric Kettles</a></li>
+          <li> | <a target="_blank" href="">Hair Straighteners</a></li>
+          <li> | <a target="_blank" href="">Induction Cooktops</a></li>
+          <li> | <a target="_blank" href="">Sewing Machines</a></li>
+          <li> | <a target="_blank" href="">Geysers</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Home &amp; Kitchen:</a></li>
+          <li> <a target="_blank" href="">Bedsheets</a></li>
+          <li> | <a target="_blank" href="">Hardware &amp; Sanitaryware</a></li>
+          <li> | <a target="_blank" href="">Towels, Bath Linens</a></li>
+          <li> | <a target="_blank" href="">Furniture</a></li>
+          <li> | <a target="_blank" href="">Cookware</a></li>
+          <li> | <a target="_blank" href="">Kitchen Tools</a></li>
+          <li> | <a target="_blank" href="">Home Cleaning Utilities</a></li>
+          <li> | <a target="_blank" href="">Doormats</a></li>
+          <li> | <a target="_blank" href="">Curtains</a></li>
+          <li> | <a target="_blank" href="">Gardening Essentials</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Fashion:</a></li>
+          <li> <a target="_blank" href="">Women's Clothing</a></li>
+          <li> | <a target="_blank" href="">Men's Clothing</a></li>
+          <li> | <a target="_blank" href="">Women's Ethnic Wear</a></li>
+          <li> | <a target="_blank" href="">Men's Fashion Accessories</a></li>
+          <li> | <a target="_blank" href="">Sports Wear</a></li>
+          <li> | <a target="_blank" href="">Western Wear</a></li>
+          <li> | <a target="_blank" href="">Handbags &amp; Wallets, Clutches</a></li>
+          <li> | <a target="_blank" href="">Handbags</a></li>
+          <li> | <a target="_blank" href="">Sarees</a></li>
+          <li> | <a target="_blank" href="">T-Shirts</a></li>
+          <li> | <a target="_blank" href="">Lingerie &amp; Sleep Wear</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Footwear:</a></li>
+          <li> <a target="_blank" href="">Men's Sports Shoes</a></li>
+          <li> | <a target="_blank" href="">Men's Slippers</a></li>
+          <li> | <a target="_blank" href="">Casual Shoes</a></li>
+          <li> | <a target="_blank" href="">Sandals &amp; Floaters</a></li>
+          <li> | <a target="_blank" href="">Formal Shoes</a></li>
+          <li> | <a target="_blank" href="">Women Flats</a></li>
+          <li> | <a target="_blank" href="">Ballerinas</a></li>
+          <li> | <a target="_blank" href="">Loafers</a></li>
+          <li> | <a target="_blank" href="">Boots</a></li>
+          <li> | <a target="_blank" href="">Shoe Care &amp; Accessories</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Travel &amp; Luggage:</a></li>
+          <li> <a target="_blank" href="">Duffle Bags</a></li>
+          <li> | <a target="_blank" href="">Laptop Bags</a></li>
+          <li> | <a target="_blank" href="">Travel Pouches</a></li>
+          <li> | <a target="_blank" href="">Backpacks</a></li>
+          <li> | <a target="_blank" href="">Suitcases &amp; Trolleys</a></li>
+          <li> | <a target="_blank" href="">Travel Accessories</a></li>
+          <li> | <a target="_blank" href="">Gym Bags</a></li>
+          <li> | <a target="_blank" href="">Messenger Bags</a></li>
+          <li> | <a target="_blank" href="">School Bags</a></li>
+          <li> | <a target="_blank" href="">Safety Locks</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Jewelry &amp; Watches:</a></li>
+          <li> <a target="_blank" href="">Coins &amp; Bars</a></li>
+          <li> | <a target="_blank" href="">Men's Watches</a></li>
+          <li> | <a target="_blank" href="">Women's Watches</a></li>
+          <li> | <a target="_blank" href="">Necklaces Sets</a></li>
+          <li> | <a target="_blank" href="">Fashion Jewelry</a></li>
+          <li> | <a target="_blank" href="">Pendants and Lockets</a></li>
+          <li> | <a target="_blank" href="">Earrings</a></li>
+          <li> | <a target="_blank" href="">Rings</a></li>
+          <li> | <a target="_blank" href="">Jewelry Boxes</a></li>
+          <li> | <a target="_blank" href="">Kid's Watches</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Automotive:</a></li>
+          <li> <a target="_blank" href="">Bike Accessories / Tools</a></li>
+          <li> | <a target="_blank" href="">Car Cleaning Aids</a></li>
+          <li> | <a target="_blank" href="">Helmets</a></li>
+          <li> | <a target="_blank" href="">Bike Body Covers</a></li>
+          <li> | <a target="_blank" href="">Car Accessories / Tools</a></li>
+          <li> | <a target="_blank" href="">Riding Gloves</a></li>
+          <li> | <a target="_blank" href="">Car Perfumes</a></li>
+          <li> | <a target="_blank" href="">Car Scratch Removers</a></li>
+          <li> | <a target="_blank" href="">Car Audio | Video</a></li>
+          <li> | <a target="_blank" href="">Bike Alarms</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Toys, Baby &amp; Kids :</a></li>
+          <li> <a target="_blank" href="">Diapers</a></li>
+          <li> | <a target="_blank" href="">Educational Toys</a></li>
+          <li> | <a target="_blank" href="">Kid's Footwear</a></li>
+          <li> | <a target="_blank" href="">Remote Controlled Toys</a></li>
+          <li> | <a target="_blank" href="">Soft Toys</a></li>
+          <li> | <a target="_blank" href="">Party Supplies</a></li>
+          <li> | <a target="_blank" href="">Cubes</a></li>
+          <li> | <a target="_blank" href="">Maternity Care</a></li>
+          <li> | <a target="_blank" href="">Kid's Apparel</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Gourmet &amp; Daily Needs :</a></li>
+          <li> <a target="_blank" href="">Office Supplies</a></li>
+          <li> | <a target="_blank" href="">Pet Supplies</a></li>
+          <li> | <a target="_blank" href="">Books</a></li>
+          <li> | <a target="_blank" href="">Namkeen</a></li>
+          <li> | <a target="_blank" href="">Stationery</a></li>
+          <li> | <a target="_blank" href="">Pens &amp; Markers</a></li>
+          <li> | <a target="_blank" href="">Tea &amp; Coffee</a></li>
+          <li> | <a target="_blank" href="">Chocolates &amp; Candies</a></li>
+          <li> | <a target="_blank" href="">Indian Sweets</a></li>
+          <li> | <a target="_blank" href="">Gifts</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Sports and Health</a></li>
+          <li><a target="_blank" href="">Home Gym Equipment</a></li>
+          <li> | <a target="_blank" href="">Exercise Bikes</a></li>
+          <li> | <a target="_blank" href="">Gym Accessories</a></li>
+          <li> | <a target="_blank" href="">Massagers</a></li>
+          <li> | <a target="_blank" href="">Diabetic Care</a></li>
+          <li> | <a target="_blank" href="">Cricket</a></li>
+          <li> | <a target="_blank" href="">Table Tennis</a></li>
+        </ul>
+        <ul>
+          <li class="ftcat_heading"><a target="_blank" href="">Beauty &amp; Perfumes:</a></li>
+          <li> <a target="_blank" href="">Grooming Essentials</a></li>
+          <li> | <a target="_blank" href="">Deodorants</a></li>
+          <li> | <a target="_blank" href="">Men's Perfumes</a></li>
+          <li> | <a target="_blank" href="">Hair Care</a></li>
+          <li> | <a target="_blank" href="">Women's Perfumes</a></li>
+          <li> | <a target="_blank" href="">Face Packs</a></li>
+          <li> | <a target="_blank" href="">Oral Care</a></li>
+          <li> | <a target="_blank" href="">Herbal Care</a></li>
+          <li> | <a target="_blank" href="">Value Combo</a></li>
+          <li> | <a target="_blank" href="">Women's Hygiene</a></li>
+        </ul>
+        <h3>Popular on ShopClues</h3>
+        <ul>
+          <li> <a target="_blank" href="">Offers &amp; Coupons</a></li>
+          <li> | <a target="_blank" href="">Couple Watches</a></li>
+          <li> | <a target="_blank" href="">Gas Stoves</a></li>
+          <li> | <a target="_blank" href="">Air Coolers</a></li>
+          <li> | <a target="_blank" href="">Air Purifiers</a></li>
+          <li> | <a target="_blank" href="">Headphones / Mic / Headset</a></li>
+          <li> | <a target="_blank" href="">Pressure Cookers</a></li>
+          <li> | <a target="_blank" href="">Sandwich Makers</a></li>
+          <li> | <a target="_blank" href="">Air Friers / Deep Friers</a></li>
+          <li> | <a target="_blank" href="">Irons</a></li>
+          <li> | <a target="_blank" href="">LED TV</a></li>
+          <li> | <a target="_blank" href="">Men Jackets</a></li>
+          <li> | <a target="_blank" href="">Educational Toys</a></li>
+          <li> | <a target="_blank" href="">Stabilizers</a></li>
+          <li> | <a target="_blank" href="">Heaters</a></li>
+          <li> | <a target="_blank" href="">Car Audio Systems</a></li>
+          <li> | <a target="_blank" href="">Photo Frames</a></li>
+          <li> | <a target="_blank" href="">Men's Shoes</a></li>
+          <li> | <a target="_blank" href="">Decorative Lights</a></li>
+          <li> | <a target="_blank" href="">Rain Wear</a></li>
+          <li> | <a target="_blank" href="">Bedsheets</a></li>
+          <li> | <a target="_blank" href="">Top Brands</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="scfooter_bottom">
+      <div class="wrapper">
+        <ul>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">User Agreement</a></li>
+          <li><a href="">Notes to Security Practices</a></li>
+          <li><a href="">Compliance</a></li>
+          <li><a href="">Wall of Fame</a></li>
+        </ul>
+        <div class="sc_copyright">
+          <p>Copyright © 2011-2023 Polarkae</p>
+          <img itemprop="logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODIzIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDgyMyAxNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTY3LjkzMi43OTJjMzcuNDMyIDAgNjcuNzg2IDMxLjE1IDY3Ljc1MiA2OS41Mi0uMDYgMzcuNzA3LTMwLjY2NiA2OC42OS02Ny45MjUgNjguNjgzLTM3LjQ0NiAwLTY3Ljc5OS0zMS4xNDktNjcuNzU5LTY5LjUyQy4wMDcgMzEuNzgyIDMwLjY2Ljc4NSA2Ny45MzIuNzkyeiIgZmlsbD0iIzA1QTJCMyIvPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMTIuNDY0IDM4LjYzYy0uNTM5IDEuMDE4LTMxLjc3IDQ0Ljk3Ni00OS44MTUgNjUuNDMxLTQuMjcxIDQuODM1LTExLjQzNyA0Ljk2MS0xNS43MDItLjI1Mi05Ljg2Ny0xMi4wNS0xNy44MzgtMjIuNTExLTI3LjA5My0zNy4wNDgtMS4yNzctMS45OTUtMi44NTQtNC44NzUtLjU2Ni03LjM5NSAwIDAgMi41MjItMi44MDcgNy45ODUgMS4wNSA2Ljk0IDQuODk1IDE0LjMyNSA5LjY3NyAyMS4xMzggMTQuMjE5IDMuODk5IDIuNTkzIDYuMzg3IDIuODIgOS45OC4wMzNDNzMuNTI4IDYyLjk2MyAxMDcuNDYgMzcuNzIgMTA5LjM5IDM2LjU0MmMzLjQwNi0yLjA2OCAzLjgzOS41MiAzLjAyNyAyLjA4OWguMDQ3eiIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMTIuNDY0IDM4LjYzYy0uNTM5IDEuMDE4LTMxLjc3IDQ0Ljk3Ni00OS44MTUgNjUuNDMxLTQuMjcxIDQuODM1LTExLjQzNyA0Ljk2MS0xNS43MDItLjI1Mi05Ljg2Ny0xMi4wNS0xNy44MzgtMjIuNTExLTI3LjA5My0zNy4wNDgtMS4yNzctMS45OTUtMi44NTQtNC44NzUtLjU2Ni03LjM5NSAwIDAgMi41MjItMi44MDcgNy45ODUgMS4wNSA2Ljk0IDQuODk1IDE0LjMyNSA5LjY3NyAyMS4xMzggMTQuMjE5IDMuODk5IDIuNTkzIDYuMzg3IDIuODIgOS45OC4wMzNDNzMuNTI4IDYyLjk2MyAxMDcuNDYgMzcuNzIgMTA5LjM5IDM2LjU0MmMzLjQwNi0yLjA2OCAzLjgzOS41MiAzLjAyNyAyLjA4OWguMDQ3eiIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggZD0iTTc5NS43MDIgNjIuMTk5Yy0xLjc3LjUyNS0zLjQyIDEuMzktNC44NTcgMi41NDdhMTAuOTcgMTAuOTcgMCAwIDAtMy4wMTQgMy45OSAxMy4xODQgMTMuMTg0IDAgMCAwLTEuMDM4IDUuMzIgMTEuODA1IDExLjgwNSAwIDAgMCAxLjI3MSA1LjY0NiAxMS4zODUgMTEuMzg1IDAgMCAwIDMuMzggMy45MyAxNC41MyAxNC41MyAwIDAgMCA0LjkwMyAyLjI4OCAyMy41MjUgMjMuNTI1IDAgMCAwIDExLjgxIDAgMTQuMjg2IDE0LjI4NiAwIDAgMCA0Ljg3Ny0yLjI4OCAxMS4xNzcgMTEuMTc3IDAgMCAwIDMuMzI3LTMuOTIzIDEyLjQ4OCAxMi40ODggMCAwIDAgMS4yMjQtNS43NiAxMi4yNTUgMTIuMjU1IDAgMCAwLTEuMjUxLTUuNzEyIDExLjI5OSAxMS4yOTkgMCAwIDAtMy4zMjctMy45MjMgMTQuNjQyIDE0LjY0MiAwIDAgMC00Ljg4My0yLjI4OCAyMi40MTUgMjIuNDE1IDAgMCAwLTUuODc1LS43NTIgMjIuMDYgMjIuMDYgMCAwIDAtNi41MjEuODkybC0uMDI2LjAzM3ptLTExLjc4NCAxOS41MjVhMTcuMjIxIDE3LjIyMSAwIDAgMS0xLjU3Ni03LjUxNSAxOC4yOTEgMTguMjkxIDAgMCAxIDEuNTUtNy43NCAxNS42NCAxNS42NCAwIDAgMSA0LjI3OC01LjU4NyAxOC40OTMgMTguNDkzIDAgMCAxIDYuMzQ3LTMuMzY1IDI3LjAxMyAyNy4wMTMgMCAwIDEgMTUuMzAzIDAgMTguODMxIDE4LjgzMSAwIDAgMSA2LjI5NSAzLjMyNSAxNS44MjQgMTUuODI0IDAgMCAxIDQuMzA0IDUuNTQ2IDE5LjMzNCAxOS4zMzQgMCAwIDEgMCAxNS4zMjkgMTUuODY0IDE1Ljg2NCAwIDAgMS00LjMwNCA1LjU0IDE4LjQyIDE4LjQyIDAgMCAxLTYuMjk1IDMuMzI1IDI2LjExMSAyNi4xMTEgMCAwIDEtNy42MDUgMS4wOSAyNS43OSAyNS43OSAwIDAgMS03LjY3OC0xLjExNyAxOC43NzMgMTguNzczIDAgMCAxLTYuMzItMy4zMjUgMTYuMDY2IDE2LjA2NiAwIDAgMS00LjMwNS01LjQ4NmwuMDA2LS4wMnptMzYuOTAxIDM0LjEwOC0uMDc0LS4yMTNhMTQuNjM1IDE0LjYzNSAwIDAgMC0yLjkyLTQuNzY4IDE0Ljg5IDE0Ljg5IDAgMCAwLTQuMjY1LTMuMTcyIDIzLjgwOSAyMy44MDkgMCAwIDAtNS4wODQtMS44MDJsLS44MzEtLjE4Ni4wNzMgNS4zMi41MTkuMTJjMS4zMzUuMzAyIDIuNjI0Ljc4IDMuODMyIDEuNDIzYTExLjgzOCAxMS44MzggMCAwIDEgMi45ODEgMi4yODcgOS45NTcgOS45NTcgMCAwIDEgMS45NDkgMy4xMTljLjM3OSAxLjEzNC41NjggMi4zMjMuNTU5IDMuNTE4YTExLjU3NiAxMS41NzYgMCAwIDEtMS4zMyA1LjgxMiAxMC40MSAxMC40MSAwIDAgMS0zLjQ1MyAzLjY3MSAxNS4yOTkgMTUuMjk5IDAgMCAxLTQuOTU3IDEuOTk1Yy0zLjg1Mi44MzMtNy44NC43OTktMTEuNjc3LS4wOTlhMTQuNzkxIDE0Ljc5MSAwIDAgMS00Ljg1MS0yLjE1NSAxMC41OTQgMTAuNTk0IDAgMCAxLTMuMzI2LTMuNjQ0IDEwLjgxNCAxMC44MTQgMCAwIDEtMS4yMTEtNS4yNzQgMTUuODY4IDE1Ljg2OCAwIDAgMSAuNDUyLTMuOTQzIDkuNTQ1IDkuNTQ1IDAgMCAxIDEuMjMxLTIuNjYxYzEuMjExLTEuNzc1IDMuMzI3LTMuMDA1IDYuMjA4LTMuNjc3bC41MzktLjExM3YtLjM5MmguMDY2di00LjgxNWwtLjc3MS4xMmExNS40MjYgMTUuNDI2IDAgMCAwLTUuMTUgMS43MDIgMTIuNDA3IDEyLjQwNyAwIDAgMC0zLjc3OSAzLjE2NSAxMi44NDggMTIuODQ4IDAgMCAwLTEuOTIzIDMuMzcyYy0uMjE3LjQ5LS40MDYuOTkyLS41NjYgMS41MDNhMTguNDgzIDE4LjQ4MyAwIDAgMC0uNzU4IDUuMzggMjEuNTc4IDIxLjU3OCAwIDAgMCAxLjA3MSA2LjkzNiAxNC4xMTYgMTQuMTE2IDAgMCAwIDMuNTA2IDUuNjEzIDE2LjQ5OCAxNi40OTggMCAwIDAgNi4xODEgMy43MjQgMjcuNTU5IDI3LjU1OSAwIDAgMCA5LjA3NiAxLjMzYzIuNTMuMDEyIDUuMDUzLS4yODUgNy41MTEtLjg4NWExOC4yMzcgMTguMjM3IDAgMCAwIDYuMzM1LTIuODU5IDE0LjQ5MyAxNC40OTMgMCAwIDAgNC4zNzEtNS4xMTQgMTYuMTQ5IDE2LjE0OSAwIDAgMCAxLjYxNy03LjQ4MSAxOC40NzMgMTguNDczIDAgMCAwLTEuMDg1LTYuNTkxIDIuNjczIDIuNjczIDAgMCAwLS4xMDYtLjIzOWwuMDQtLjAyN3ptLTM3LjMzMy03NS4wMjdoMzcuMzc5di0uMzMyaC4xOHYtNC43ODhoLTI4LjQ4NGwyOC4zMDQtMTAuNDQxdi0uNDE5bC4xOC0uMDY2di00LjE3bC0yNy44NTItMTAuMjQxaDI3LjY3MnYtLjY2NWguMThWNC44OTVINzgzLjN2Ni4zNTdsLjE4Ni4wNnYuNTU5TDgxMy41IDIyLjgzbC0zMC4yIDExLjIyNXY2LjM5MWguMTg2VjQwLjgwNXptLTU1LjQzNy00LjgyOGMwLTcuMjI4IDAtMTMuNDg2IDYuODQ3LTEzLjQ4NiA2Ljg0NiAwIDYuODM5IDcuOTggNi44MzkgMTMuODc5IDAgMi45MzIuOTg1IDMuOTEgMy45MTMgMy45MWgxNS40NTZjMi45MzQgMCAzLjkxMi0xLjk1NSAzLjkxMi00Ljg4MSAwLTIxLjExNC0xMC4xNjctMzUuMTkzLTMxLjA5OC0zNS4xOTMtMTkuNTU1IDAtMjkuMzM2IDEzLjA5NC0yOS4zMzYgMzAuNjkgMCAxNS40NDIgMS45NTcgMjIuNjc4IDIwLjczMyA0NC43NjMgMTAuMzY2IDEyLjEyMyAxNi4yMzQgMjAuMTM2IDE2LjIzNCAyNy41NjUgMCA3LjIyOCAwIDEzLjQ3OS02Ljg0NiAxMy40NzktNi44NDcgMC02Ljg0LTcuOTgtNi44NC0xMy44NzggMC0yLjkzMy0uOTg1LTMuOTEtMy45MTItMy45MWgtMTUuNDYzYy0yLjkzNCAwLTMuOTEyIDEuOTU0LTMuOTEyIDQuODg3IDAgMjEuMTIxIDEwLjE2NiAzNS4xOTMgMzEuMDk4IDM1LjE5MyAxOS41NTUgMCAyOS4zMzUtMTMuMDk0IDI5LjMzNS0zMC42OTcgMC0xNS40MzUtMS43NTYtMjIuNjc3LTIwLjUzMi00NC43NjMtMTAuMzczLTEyLjExNi0xNi40MzQtMjAuMTMtMTYuNDM0LTI3LjU1OGguMDA2em0tNzguNDExIDEwMi4wNGg0Mi4yMTZjMi45MzUgMCAzLjkxMy0uOTc3IDMuOTEzLTMuOTF2LTE0LjQ3MWMwLTIuOTMzLS45NzgtMy45MDQtMy45MTMtMy45MDRoLTE4Ljc3NmMtMy45MTIgMC0zLjkxMiAwLTMuOTEyLTMuOTFWODAuOTM5YzAtMy45MSAwLTMuOTEgMy45MTItMy45MWgxOC43NzZjMi45MzUgMCAzLjkxMy0uOTc4IDMuOTEzLTMuOTFWNTguNjQ3YzAtMi45MjYtLjk3OC0zLjkwNC0zLjkxMy0zLjkwNGgtMTguNzc2Yy0zLjkxMiAwLTMuOTEyIDAtMy45MTItMy45MVYyNy4zNzJjMC0zLjkwNCAwLTMuOTA0IDMuOTEyLTMuOTA0aDE4Ljc3NmMyLjkzNSAwIDMuOTEzLS45NzcgMy45MTMtMy45MVY1LjA5NGMwLTIuOTMzLS45NzgtMy45MS0zLjkxMy0zLjkxaC00Mi4yMzZjLTIuOTQxIDAtMy45MTIuOTc3LTMuOTEyIDMuOTF2MTI5LjAxM2MwIDMuOTEgMS45NTYgMy45MSAzLjkxMiAzLjkxaC4wMnpNNjEwLjUyMiA1LjA5NHY5NS41ODljMCA5Ljc2OSAwIDE2LjAyLTYuODQ2IDE2LjAycy02Ljg0Ni02LjI1MS02Ljg0Ni0xNi4wMlY1LjA5NGMwLTIuOTMzLS45NzktMy45MS0zLjkxMy0zLjkxaC0xNS42NDJjLTIuOTM0IDAtMy45MTIuOTc3LTMuOTEyIDMuOTF2OTQuNzk4YzAgMjkuNTIgMTAuNzU4IDM5LjEwMyAzMC4zMTMgMzkuMTAzczMwLjI5My05Ljc4MyAzMC4yOTMtMzkuMTAzVjUuMDk0YzAtMi45MzMtLjk3MS0zLjkxLTMuOTEyLTMuOTFoLTE1LjYzNmMtMi45MzQgMC0zLjkxMi45NzctMy45MTIgMy45MWguMDEzem0tODcuMjI3IDEzMi45MjNoNDEuMjUyYzIuOTM0IDAgMy45MTktLjk3NyAzLjkxOS0zLjkxdi0xNC40NzFjMC0yLjkzMy0uOTg1LTMuOTA0LTMuOTE5LTMuOTA0aC0xNy41ODVjLTQuMTA1IDAtNC4xMDUgMC00LjEwNS00LjEwM1Y1LjA5NGMwLTIuOTMzLS45NzItMy45MS0zLjkxOS0zLjkxaC0xNS42NDNjLTIuOTM0IDAtMy45MDUuOTc3LTMuOTA1IDMuOTF2MTI5LjAxM2MwIDIuOTMzLjk3MSAzLjkxIDMuOTA1IDMuOTF6TTQ3MC41IDM4LjMyNWMwLTkuNzcgMC0xNi4wMzQgNi44NDctMTYuMDM0IDYuODQ2IDAgNi44NDYgNi4yNjUgNi44NDYgMTYuMDM0djUuODU5YzAgMi45MzkuOTcxIDMuOTEgMy45MTIgMy45MWgxNS42MzZjMi45NDEgMCAzLjkxMi0uOTcxIDMuOTEyLTMuOTF2LTUuMDg4QzUwNy42NTMgOS43NyA0OTYuOTAxIDAgNDc3LjM0NyAwYy0xOS41NTUgMC0zMC4zNCA5LjU4My0zMC4zNCAzOS4wOTZWOTkuODhjMCAyOS41MiAxMC43NTggMzkuMTAyIDMwLjMyIDM5LjEwMiAxOS41NjEgMCAzMC4zMDYtOS43ODIgMzAuMzA2LTM5LjEwMnYtNC44ODJjMC0yLjkzMi0uOTcxLTMuOTEtMy45MTItMy45MWgtMTUuNjM2Yy0yLjk0MSAwLTMuOTEyLjk3OC0zLjkxMiAzLjkxdjUuNjczYzAgOS43NjkgMCAxNi4wMi02Ljg0NiAxNi4wMi02Ljg0NyAwLTYuODQ3LTYuMjUxLTYuODQ3LTE2LjAyVjM4LjMyNWguMDJ6TTM5OC4xNDQgMjYuNGMwLTMuOTEgMC0zLjkxIDMuOTEyLTMuOTEgOS43NzQgMCA5Ljc3NCA5Ljk3NSA5Ljc3NCAxOS45NXY4Ljc5MmMwIDkuOTc1IDAgMTkuOTUtOS43NzQgMTkuOTUtMy45MTIgMC0zLjkxMiAwLTMuOTEyLTMuNTE4VjI2LjQwMXptMzcuMTUzIDI3LjE3M3YtMTMuM2MwLTI5LjMyOC0xMy42ODctMzkuMDk3LTMzLjI2OC0zOS4wOTdoLTIzLjQ0N2MtMi45MzQgMC0zLjkxMi45NzgtMy45MTIgMy45MVYxMzQuMWMwIDIuOTMzLjc4NSAzLjkxIDMuOTEyIDMuOTFoMTUuNjQ5YzIuNzM1IDAgMy45MTMtLjk3NyAzLjkxMy0zLjkxVjk2LjM4YzAtMy45MSAwLTMuOTEgMy45MTItMy45MSAxOS41NTQgMCAzMy4yNjctOS43NzUgMzMuMjY3LTM4Ljg5NmgtLjAyNnptLTk1LjgxLTE0Ljg1N3Y2MS45NjZjMCA5Ljc2OSAwIDE2LjAyLTYuODQ3IDE2LjAyLTYuODQ2IDAtNi44NC02LjI1MS02Ljg0LTE2LjAyVjM4LjcxN2MwLTkuOTc1IDAtMTYuMjI2IDYuODQtMTYuMjI2czYuODQ3IDYuMjU4IDYuODQ3IDE2LjIyNnptMjMuNDY2IDYxLjE4MVYzOS4zMDNjMC0yOS4zMjctMTAuNzUyLTM5LjA5Ni0zMC4zMTMtMzkuMDk2cy0zMC4zMTMgOS41NzYtMzAuMzEzIDM5LjA5NnY2MC41OWMwIDI5LjUyIDEwLjc1OSAzOS4xMDMgMzAuMzEzIDM5LjEwMyAxOS41NTUgMCAzMC4zMTMtOS43ODMgMzAuMzEzLTM5LjEwM3YuMDA3em0tOTEuOTMxIDM4LjExOWgxNS42MzZjMS45NTYgMCAzLjkxMiAwIDMuOTEyLTMuOTFWNS4wOTRjMC0yLjkzMy0uOTc4LTMuOTEtMy45MTItMy45MWgtMTUuNjM2Yy0yLjkyNyAwLTMuOTA1Ljk3Ny0zLjkwNSAzLjkxdjQ1Ljc0YzAgMy45MSAwIDMuOTEtMy45MTIgMy45MWgtNS44NjJjLTMuOTEyIDAtMy45MTIgMC0zLjkxMi0zLjkxVjUuMDk0YzAtMi45MzMtLjk3OC0zLjkxLTMuOTEzLTMuOTFoLTE1LjY1NWMtMi45MjggMC0zLjkxMi45NzctMy45MTIgMy45MXYxMjkuMDEzYzAgMy45MSAxLjk5NiAzLjkxIDMuOTEyIDMuOTFoMTUuNjU1YzEuOTU3IDAgMy45MTMgMCAzLjkxMy0zLjkxVjgwLjkwNmMwLTMuOTEgMC0zLjkxIDMuOTEyLTMuOTFoNS44NjJjMy45MTIgMCAzLjkxMiAwIDMuOTEyIDMuOTF2NTMuMjAxYzAgMy45MSAxLjk1NiAzLjkxIDMuOTA1IDMuOTF6bS04Ni44MjctMTAyLjA0YzAtNy4yMjggMC0xMy40ODYgNi44NTMtMTMuNDg2czYuODQ2IDcuOTggNi44NDYgMTMuODc5YzAgMi45MzIuOTcyIDMuOTEgMy45MDYgMy45MWgxNS40NDljMi45MzQgMCAzLjkwNi0xLjk1NSAzLjkwNi00Ljg4MSAwLTIxLjExNC0xMC4xNi0zNS4xOTMtMzEuMDg1LTM1LjE5My0xOS41NjggMC0yOS4zNDIgMTMuMDk0LTI5LjM0MiAzMC42OSAwIDE1LjQ0MiAxLjk2MyAyMi42NzggMjAuNzM5IDQ0Ljc2MyAxMC4zNTkgMTIuMTIzIDE2LjIyOCAyMC4xMzYgMTYuMjI4IDI3LjU2NSAwIDcuMjI4IDAgMTMuNDc5LTYuODQ3IDEzLjQ3OS02Ljg0NiAwLTYuODQ2LTcuOTgtNi44NDYtMTMuODc4IDAtMi45MzMtLjk3OC0zLjkxLTMuOTA2LTMuOTFIMTY0LjY0Yy0yLjkzNCAwLTMuOTEyIDEuOTU0LTMuOTEyIDQuODg3IDAgMjEuMTIxIDEwLjE2NiAzNS4xOTMgMzEuMDk4IDM1LjE5MyAxOS41NTUgMCAyOS4zMjktMTMuMDk0IDI5LjMyOS0zMC42OTcgMC0xNS40MzUtMS43NTctMjIuNjc3LTIwLjUzMy00NC43NjMtMTAuMzU5LTEyLjExNi0xNi40MjctMjAuMTMtMTYuNDI3LTI3LjU1OHptNTgzLjI0MyA5NS45NTVoNy4wNjZ2Ny4wNjNoLTcuMDY2di03LjA2M3oiIGZpbGw9IiMxRDFEMUIiLz4KPC9zdmc+Cg==" alt="https://polarkae.github.io">
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <input value="bhf[]" class="bhf_id" type="hidden">
+
+  <div id="responseLoading" style="display: none;">
+    <div class="circleSpin">
+      <div class="circle"></div>
+    </div>
+  </div>
+
+  <div id="snackbar" class="cb_toastmsg">This is only indicative price.The final discounted price will be visible during checkout based on total order amount and available CB/CB+.</div>
+
+  <div class="loading" style="display: none;">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+  </div>
+</body>
+
+</html>

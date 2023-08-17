@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+    <g opacity="0.74">
+        <g fill="none" stroke="#3faebd" transform="translate(-229.133 -386) translate(229.133 386)">
+            <circle cx="6" cy="6" r="6" stroke="none"/>
+            <circle cx="6" cy="6" r="5.5"/>
+        </g>
+        <text fill="#2ea7b8" font-family="Roboto-Medium, Roboto" font-size="9px" font-weight="500" transform="translate(-229.133 -386) translate(234.133 395)">
+            <tspan x="0" y="0">!</tspan>
+        </text>
+    </g>
+</svg>

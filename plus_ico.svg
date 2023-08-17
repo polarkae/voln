@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_6" transform="translate(-105 -334)">
+        <circle id="Ellipse_2" cx="6.5" cy="6.5" r="6.5" fill="#8c8c8c" transform="translate(105 334)"/>
+        <path id="Rectangle_4" d="M0 0H7V1.5H0z" class="cls-2" transform="translate(108 339.935)"/>
+        <path id="Rectangle_11" d="M0 0H7V1.5H0z" class="cls-2" transform="rotate(90 -112.468 224.718)"/>
+    </g>
+</svg>
